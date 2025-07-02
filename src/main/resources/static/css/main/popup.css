@@ -1,0 +1,360 @@
+/* 濡쒓렇�� �앹뾽 */
+
+.pop_induce img {
+    width: 100%;
+}
+
+.pop_induce .popup {
+    background: none;
+    padding-bottom: 0;
+}
+
+.pop_induce .popup .checkbox {
+    right: 0;
+}
+
+.pop_induce .popup .checkbox.cookie-checkbox {
+    display:none;
+}
+
+
+.pop_induce.suggestion .popup,
+.pop_induce.partnership .popup {
+    position: absolute;
+    padding-bottom: 0px;
+    height: 7rem;
+    background: #ffffff;
+    border-radius: 30px;
+    left: 50%;
+    top: 50%;
+    width: 19rem;
+    transform: translate(-50%, -50%);
+}
+
+.pop_induce.suggestion .popup .wrap,
+.pop_induce.partnership .popup .wrap {
+    display: inline-block;
+    color: #3c3c3c;
+    font-weight: 500;
+    font-size: 0.88rem;
+    padding-bottom: 0.06rem;
+    border: none;
+    top: 0%;
+    height: 100%;
+}
+
+.pop_induce.suggestion .popup .wrap .logout_ask,
+.pop_induce.partnership .popup .wrap .logout_ask {
+    width: 100%;
+    height: 60%;
+    border-bottom: 1px solid #d1d1d1;
+    position: relative;
+}
+
+.pop_induce.suggestion .popup .wrap .logout_ask.agree,
+.pop_induce.partnership .popup .wrap .logout_ask.agree {
+    height: 40%;
+    border: none;
+    width: 100%;
+    position: relative;
+}
+
+.pop_induce.suggestion popup .wrap .logout_ask span,
+.pop_induce.partnership popup .wrap .logout_ask span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.2;
+    font-size: 1.055rem;
+}
+
+.pop_induce.suggestion .popup .wrap .logout_ask.agree span,
+.pop_induce.partnership .popup .wrap .logout_ask.agree span {
+    color: #ffd113;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.new-popup.popup-module .popup {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 20px #3c3c3c;
+    overflow: hidden;
+    text-align: right;
+    padding-top: 2.3rem;
+}
+
+.new-popup.popup-module .popup .popup-message-box {
+    text-align: center;
+    width: 70%;
+    border: 0.1rem solid #222;
+    position: relative;
+    margin: 0 0 1.5rem 2.5rem;
+    border-radius: 2rem;
+    padding: 1rem 0.7rem;
+    font-size: 1rem;
+    font-family: 'Jalnan', sans-serif;
+}
+
+@media screen and (max-width: 550px) {
+    .new-popup.popup-module .popup .popup-message-box {
+        margin: 0 0 1.5rem 1.5rem;
+        width: 80%;
+    }
+}
+
+.new-popup.popup-module .popup .popup-message-box::after {
+    content: '';
+    width: 1.43rem;
+    position: absolute;
+    bottom: -3px;
+    background-color: white;
+    right: 2.3rem;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.new-popup.popup-module .popup .popup-message-box img {
+    width: 1.7rem;
+    position: absolute;
+    bottom: -1px;
+    transform: translateY(100%);
+    right: 2.13rem;
+}
+
+.new-popup.popup-module .popup img.mr-kuku {
+    width: 80%;
+}
+
+.new-popup.popup-module .popup div.btn_induce {
+    background-color: #ffd113;
+    text-align: center;
+    position: initial;
+    padding: 1rem 0;
+    cursor: initial;
+}
+
+.new-popup.popup-module .popup .btn_induce button {
+    display: flex;
+    border-color: #222222;
+    color: #222222;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 1.3rem;
+    box-shadow: 0 0.2rem black;
+    font-size: 1.05rem;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    font-family: 'jalnan', sans-serif;
+    background-color: #fff;
+    width: 8rem;
+    min-height: 4rem;
+    padding: 0 1.3rem;
+    align-items: center;
+    margin: 0 0.3rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.new-popup.popup-module.app-open .popup .btn_induce button {
+    font-size: 1.5rem;
+    width: 85%;
+}
+
+/* �� 濡쒓렇�� �좊룄 �앹뾽 */
+
+.app-login {
+    position: absolute;
+    bottom: -100%;
+}
+
+.app-login > img {
+    width: 100%;
+}
+
+.app-login .img-box-shadow {
+    filter: drop-shadow(0rem 0rem 0.7rem #bdbdbd);
+}
+
+.app-login .btn_exit.btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+}
+
+.app-login .btn_exit.btn > img {
+    width: 1rem;
+}
+
+.app-login .btn_induce.btn {
+    position: absolute;
+    background: none;
+    left: 0%;
+    bottom: 3.3rem;
+    width: 100%;
+}
+
+.app-login .btn_induce.btn > a {
+    width: 45%;
+}
+
+.app-login .btn_induce.btn > .btn_induce {
+    margin-right: 0.7rem;
+}
+
+.app-login .btn_induce > a > img {
+    width: 100%;
+}
+
+.app-login .btn_exit.ment {
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.app-login .btn_exit.ment > input {
+    display: none;
+}
+
+.app-login .btn_exit.ment > p {
+    font-family: 'RixGulimEL', sans-serif;
+    font-size: 0.85rem;
+    color: #7c7a71;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+body.ja-JP .new-popup.popup-module .popup .btn_induce button {
+    font-family: 'Corporate-Logo-Rounded', sans-serif;
+}
+
+.pop_induce.image-hidden .popup.save {
+    background-image: url('https://cdn.banggooso.com/assets/images/game27/popup_save.jpg');
+    padding-bottom: 20rem;
+    width: 80%;
+}
+
+.pop_induce.image-hidden .popup.save .checkbox input[type='checkbox'] + label::before {
+    line-height: 2px;
+}
+
+.pop_induce.image-hidden .popup.save .checkbox {
+    margin-top: -7rem;
+}
+
+.result-article .save-btn {
+    margin-bottom: 1.5rem;
+}
+
+.result-article .share-sns-list.imgselection {
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+}
+
+.long-line {
+    border: 0;
+    width: 60%;
+}
+
+.long-line.last {
+    margin-bottom: 3rem;
+    padding-top: 0.3rem;
+}
+
+.pop_induce.image-hidden.game27 .popup {
+    background-image: url('https://cdn.banggooso.com/assets/images/game27/popup_app.jpg');
+    padding-bottom: 26.5rem;
+    background-size: 100%;
+    width: 80%;
+}
+
+.pop_induce.image-hidden.game71 .popup {
+    background-image: url('https://cdn.banggooso.com/assets/images/game71/popup.png');
+    padding-bottom: 26.5rem;
+    background-size: 100%;
+    width: 80%;
+}
+
+.pop_induce.image-hidden .popup .btn_induce {
+    bottom: 5%;
+}
+
+.pop_induce.image-hidden .popup .btn_induce a {
+    width: 85%;
+}
+
+.new-popup.popup-module .popup .popup_text_color {
+    color: #f85e4e;
+}
+
+.new-popup.popup-module .popup .popup_text_big {
+    font-size: 1.2rem;
+}
+
+.new-popup.popup-module.pop_induce .popup {
+    overflow: visible;
+}
+
+.new-popup.popup-module.pop_induce .popup div.btn_induce {
+    padding: 0.8rem 0 2.5rem;
+    border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.new-popup.popup-module.pop_induce .popup .popup-message-box {
+    font-family: 'RixGulim';
+    font-weight: 900;
+    word-break: keep-all;
+}
+
+body.ja-JP .new-popup.popup-module .popup .btn_induce button,
+body.ja-JP .new-popup.popup-module .popup .popup-message-box {
+    font-family: 'Corporate-Logo-Rounded';
+}
+
+body.zh-CN .new-popup.popup-module .popup .btn_induce button,
+body.zh-CN .new-popup.popup-module .popup .popup-message-box {
+    font-family: 'StationCoolHappyBody2016';
+}
+
+body.ca-ES .new-popup.popup-module .popup .btn_induce button,
+body.ca-ES .new-popup.popup-module .popup .popup-message-box {
+    font-family: 'Ptolemy-GreatPrimer18';
+}
+
+body.ja-JP .app-login .btn_exit.ment > p,
+body.ja-JP .new-popup.popup-module.pop_induce .popup .popup-message-box {
+    font-family: 'NotoSansCJKjp';
+    word-break: break-all;
+}
+
+body.en-US .app-login .btn_exit.ment > p,
+body.en-US .new-popup.popup-module.pop_induce .popup .popup-message-box {
+    font-family: 'OdinRoundedBold';
+    word-break: break-all;
+}
+
+body.zh-CN .app-login .btn_exit.ment > p,
+body.zh-CN .new-popup.popup-module.pop_induce .popup .popup-message-box {
+    font-family: 'ZhankuLiteraryStyle';
+    word-break: break-all;
+}
+
+body.ca-ES .app-login .btn_exit.ment > p,
+body.ca-ES .new-popup.popup-module.pop_induce .popup .popup-message-box {
+    font-family: sans-serif;
+}
+
+body.ja-JP .new-popup.popup-module .popup .popup-message-box {
+    font-size: 0.9rem;
+}
+
+body.zh-CN .pop_induce.suggestion .popup .wrap,
+body.zh-CN .pop_induce.partnership .popup .wrap,
+body.ca-ES .pop_induce.suggestion .popup .wrap,
+body.ca-ES .pop_induce.partnership .popup .wrap {
+    font-weight: 600;
+}

@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+/* 기본 스타일 초기화 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'RixGulim', sans-serif;
+    font-size: 16px;
+    color: #212529;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* 버튼 스타일 */
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #222;
+    background-color: #ffd524;
+    border: 1px solid #ffd524;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.btn.yellow {
+    background-color: #ffd524;
+    border-color: #ffd524;
+    color: #222;
+}
+
+.btn.email-log {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #222;
+    height: 3rem; /* 버튼 높이를 고정하여 텍스트 가운데 정렬 */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 버튼 너비를 부모 요소 기준으로 맞춤 */
+    box-sizing: border-box; /* 패딩과 보더를 포함한 크기를 맞추기 위해 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* 레이아웃 */
+.app {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.app-header {
+    height: 3.15rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.app-header .app-title {
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.app-header .app-header-btn.back {
+    width: 3rem;
+    height: 3rem;
+    background: url('https://cdn.banggooso.com/assets/images/icons/back-arrow-b.png') no-repeat center center;
+    background-size: 1.2rem;
+    cursor: pointer;
+}
+
+.app-main {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sign-in-actions {
+    margin-top: 1rem;
+}
+
+.sign-in-actions .display-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-in-actions .checkbox-circle {
+    display: inline-flex;
+    align-items: center;
+    height: 2.5rem; /* 높이를 비밀번호 찾기와 맞춤 */
+}
+
+.sign-in-actions .checkbox-circle input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.sign-in-actions .sign-in-other {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    height: 2.5rem; /* 높이를 로그인 저장과 맞춤 */
+}
+
+.sign-in-other li {
+    list-style: none;
+}
+
+/*.sns-sign-up {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin: 1rem 0;*/
+/*}*/
+
+/*.sns-sign-up li {*/
+/*    margin: 0 0.5rem;*/
+/*}*/
+
+/*.sns-button.kakao {*/
+/*    display: inline-block;*/
+/*    background: url('https://cdn.banggooso.com/assets/images/game28/icon/kakatalk.png') no-repeat center center;*/
+/*    background-size: contain;*/
+/*    width: 100px;*/
+/*    height: 30px;*/
+/*    !*padding: 1rem;*!*/
+/*    text-indent: -9999px;*/
+/*}*/
+
+.text-center {
+    text-align: center;
+}
+
+/* footer 스타일 */
+footer {
+    width: 100%;
+    text-align: center;
+    /*background: url('https://cdn.banggooso.com/assets/images/common/bg_footer.png') no-repeat;*/
+    background-size: cover;
+    padding: 2.5rem 0 0.6rem;
+    font-weight: 300;
+    margin-top: 1.2rem;
+}
+
+footer p {
+    color: #fff;
+    line-height: 1.7;
+    letter-spacing: -0.5px;
+    font-size: 0.7rem;
+}
+
+footer p span {
+    font-weight: 700;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 500px) {
+    .app {
+        width: 100%;
+    }
+    .app-header .app-title {
+        font-size: 1rem;
+    }
+}
+
+/*#login-law {*/
+/*    white-space: nowrap; !* 줄 바꿈 방지 *!*/
+/*    font-size: 5px;*/
+/*}*/

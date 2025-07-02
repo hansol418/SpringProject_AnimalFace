@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/all_result.css">
+
+</head>
+<body>
+
+
+<!--헤더-->
+
+<header>
+    <div class="logo">
+    <img src="/static/image/mainlogo2.png" >
+    </div>
+    <button>앱으로 보기</button>
+</header>
+
+
+<!--타이틀-->
+<div class="title-container">
+    <h1>모든 유형 확인하기</h1>
+    <p>여기에서 다양한 유형의 결과를 확인하세요!</p>
+</div>
+
+
+<div class="type-cards-container">
+    <!-- 데이터베이스의 결과를 반복하여 각 카드 생성 -->
+    <div th:each="result : ${results}" class="type-card">
+        <img th:src="@{${result.gameResultImage}}" alt="Game Result Image">
+        <h3 th:text="${result.gameResult}">유형 결과</h3>
+        <p>게임 번호: <span th:text="${result.gameNo}"></span></p>
+        <p>회원 번호: <span th:text="${result.memberNo}"></span></p>
+        <p>결과 ID: <span th:text="${result.resultId}"></span></p>
+    </div>
+</div>
+
+
+
+
+<!--유형 카드들-->
+<!--<div class="type-cards-container">-->
+<!--    &lt;!&ndash; 유형 카드 1 &ndash;&gt;-->
+<!--    <div class="type-card">-->
+<!--        <img src="/static/image/type1.png" alt="Type 1">-->
+<!--        <h3>유형 1</h3>-->
+<!--        <p>여기에 유형 1에 대한 간단한 설명을 추가하세요.</p>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; 유형 카드 2 &ndash;&gt;-->
+<!--    <div class="type-card">-->
+<!--        <img src="/static/image/type2.png" alt="Type 2">-->
+<!--        <h3>유형 2</h3>-->
+<!--        <p>여기에 유형 2에 대한 간단한 설명을 추가하세요.</p>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; 유형 카드 3 &ndash;&gt;-->
+<!--    <div class="type-card">-->
+<!--        <img src="/static/image/type3.png" alt="Type 3">-->
+<!--        <h3>유형 3</h3>-->
+<!--        <p>여기에 유형 3에 대한 간단한 설명을 추가하세요.</p>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; 추가적인 유형 카드를 여기에 추가할 수 있습니다. &ndash;&gt;-->
+<!--</div>-->
+
+<!--버튼들-->
+<div class="button-container">
+    <!-- 테스트 다시하기 버튼 -->
+    <div class="black_button">
+        <a href="#">테스트 하러가기
+            <img src="https://assets.metavv.com/prod/assets/images/icon/icon_replay.svg" alt="icon_replay">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

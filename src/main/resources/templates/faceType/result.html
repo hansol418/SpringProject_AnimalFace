@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>분류 결과</title>
+    <link href="/css/base/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="app" data-app style="height: 788px">
+    <header class="app-header home">
+        <input type="checkbox" id="menuicon">
+        <label for="menuicon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="sidebar"></div>
+        <a href="/main" class="logo">
+            <img src="/img/mainlogo2.png" alt="Main Logo" width="40px" height="40px">
+        </a>
+        <a class="mypage">
+            <img src="/img/mypage.png" alt="My Page" width="40px" height="40px">
+        </a>
+    </header>
+    <div class="content" layout:fragment="content">
+        <h1>분류 결과</h1>
+        <div id="result"></div>
+        <a href="/faceType/upload">다른 이미지 업로드</a>
+        <a href="/main">홈으로</a>
+    </div>
+</div>
+
+<script>
+    const result = sessionStorage.getItem('classificationResult');
+
+    if (result) {
+        document.getElementById('result').innerHTML = `<p>${result}</p>`;
+        sessionStorage.removeItem('classificationResult');
+    } else {
+        document.getElementById('result').innerHTML = `<p>결과를 확인할 수 없습니다.</p>`;
+    }
+</script>
+</body>
+</html>

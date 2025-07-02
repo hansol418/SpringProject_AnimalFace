@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/result.css">
+
+</head>
+<body>
+
+
+<!--헤더-->
+
+<header>
+    <div class="logo">
+    <img src="/image/mainlogo2.png" >
+    </div>
+
+</header>
+
+<!--미들타이틀 -->
+<div>
+    <div>
+        <div>
+            <img alt="" aria-hidden="true" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==" style="max-width: 100%; display: block; margin: 0px; border: none; padding: 0px;">
+        </div>
+    </div>
+</div>
+
+<!--메인결과-->
+<div class ="main">
+
+    <h1>결과</h1>
+    <p>당신의 점수: <span th:text="${totalScore}">점수</span></p>
+    <p>결과 설명: <span th:text="${result != null ? result.resultText : '결과가 없습니다.'}">결과 설명</span></p>
+
+
+    <h2>나의 운명의 새싹은...</h2>
+    <h1>당돌한 얼음 새싹</h1>
+    <div class ="main_sub">
+        <p>들어오기전에 노크해주세요</br>
+       가슴이 시키는건 머리가 말려줌</br>
+       자주 뚝딱거림</br>
+        </p>
+    </div>
+
+</div>
+<div>
+        <div class="black_button">
+            <span>내 결과 공유하기</span>
+    </div>
+    <ul class="list">
+        <!--카카오공유-->
+        <li>
+            <button class="btn-share" style="background-image: url(&quot;https://assets.metavv.com/prod/assets/images/viewer/btn-share-kakao.png&quot;);"></button>
+        </li>
+        <!--트위터공유-->
+        <li>
+            <button class="btn-share" style="background-image: url(&quot;https://assets.metavv.com/prod/assets/images/viewer/btn-share-twitter.png&quot;);"></button>
+        </li>
+        <!--링크복사하기-->
+        <li>
+            <button class="btn-share link-copy" style="background-image: url(&quot;https://assets.metavv.com/prod/assets/images/viewer/btn-share-linkcopy.png&quot;);"></button>
+        </li>
+    </ul>
+</div>
+
+
+<!--잘맞는 유형-->
+<div class="others">
+    <div>
+        <ul>
+            <li>
+                <p >잘 맞는 유형</p>
+                <span >순두부 치와와 새싹</span>
+            </li>
+            <!--안맞는 유형-->
+            <li>
+                <p>안 맞는 유형</p>
+                <span >학습형 AI 새싹</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--전체유형보러가기-->
+<div class="button-container">
+    <!-- 전체 유형 보러가기 버튼 -->
+    <div class="black_button">
+        <a href="#">전체유형보러가기
+        <img src="https://assets.metavv.com/prod/assets/images/icon/icon_bar_chart.svg" alt="icon_bar_chart" class="allType_filter-invert__1f35a">
+        </a>
+    </div>
+
+    <!-- 테스트 다시하기 버튼 -->
+    <div class="black_button">
+        <a href="#">테스트 다시하기
+            <img src="https://assets.metavv.com/prod/assets/images/icon/icon_replay.svg" alt="icon_replay" class="result-step_filter-invert__3xuu7">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

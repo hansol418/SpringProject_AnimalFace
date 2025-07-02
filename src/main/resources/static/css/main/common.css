@@ -1,0 +1,2785 @@
+@charset "UTF-8"; /******************************************************************/
+
+/* gl �쒖쇅 common.css */
+
+/******************************************************************/
+
+@font-face {
+    font-family: 'Jalnan';
+    src: url('https://cdn.banggooso.com/assets/fonts/Jalnan.eot');
+    src: url('https://cdn.banggooso.com/assets/fonts/Jalnan.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.banggooso.com/assets/fonts/Jalnan.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/Jalnan.woff') format('woff'),
+    url('https://cdn.banggooso.com/assets/fonts/Jalnan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RixGulim';
+    src: url('https://cdn.banggooso.com/assets/fonts/RixGulimL.eot');
+    src: url('https://cdn.banggooso.com/assets/fonts/RixGulimL.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimL.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimL.woff') format('woff'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimL.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RixGulim';
+    src: url('https://cdn.banggooso.com/assets/fonts/RixGulimM.eot');
+    src: url('https://cdn.banggooso.com/assets/fonts/RixGulimM.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimM.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimM.woff') format('woff'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimM.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RixGulim';
+    src: url('https://cdn.banggooso.com/assets/fonts/RixGulimB.eot');
+    src: url('https://cdn.banggooso.com/assets/fonts/RixGulimB.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimB.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimB.woff') format('woff'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimB.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RixGulimEB';
+    src: url('https://cdn.banggooso.com/assets/fonts/RixGulimEB.eot');
+    src: url('https://cdn.banggooso.com/assets/fonts/RixGulimEB.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimEB.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimEB.woff') format('woff'),
+    url('https://cdn.banggooso.com/assets/fonts/RixGulimEB.ttf') format('truetype');
+    /* font-weight: 700; */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('https://cdn.banggooso.com/assets/fonts/NotoSansKR-Bold-Alphabetic.eot');
+    src: url('https://cdn.banggooso.com/assets/fonts/NotoSansKR-Bold-Alphabetic.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.banggooso.com/assets/fonts/NotoSansKR-Bold-Alphabetic.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/NotoSansKR-Bold-Alphabetic.woff') format('woff'),
+    url('https://cdn.banggooso.com/assets/fonts/NotoSansKR-Bold-Alphabetic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DOSMyungjo';
+    src: url('https://cdn.banggooso.com/assets/fonts/DOSMyungjo.eot');
+    src: url('https://cdn.banggooso.com/assets/fonts/DOSMyungjo.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.banggooso.com/assets/fonts/DOSMyungjo.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/DOSMyungjo.woff') format('woff'),
+    url('https://cdn.banggooso.com/assets/fonts/DOSMyungjo.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-4Regular.eot');
+    src: url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-4Regular.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-4Regular.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-4Regular.woff') format('woff'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-4Regular.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-5Medium.eot');
+    src: url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-5Medium.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-5Medium.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-5Medium.woff') format('woff'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-5Medium.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-6Bold.eot');
+    src: url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-6Bold.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-6Bold.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-6Bold.woff') format('woff'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-6Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-7ExtraBold';
+    src: url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-7ExtraBold.eot');
+    src: url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-7ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-7ExtraBold.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-7ExtraBold.woff') format('woff'),
+    url('https://cdn.banggooso.com/assets/fonts/S-CoreDream-7ExtraBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lropkeBatangM';
+    src: url('https://cdn.banggooso.com/assets/fonts/IropkeBatangM.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/IropkeBatangM.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('https://cdn.banggooso.com/assets/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('https://cdn.banggooso.com/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('https://cdn.banggooso.com/assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'ON-�ъ뵪�μ빟�명빐B';
+    src: url('https://cdn.banggooso.com/assets/fonts/ON-�ъ뵪�μ빟�명빐B.woff2') format('woff2');
+    src: url('https://cdn.banggooso.com/assets/fonts/ON-�ъ뵪�μ빟�명빐B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ON-�ъ뵪�μ빟�명빐R';
+    src: url('https://cdn.banggooso.com/assets/fonts/ON-�ъ뵪�μ빟�명빐R.woff2') format('woff2');
+    src: url('https://cdn.banggooso.com/assets/fonts/ON-�ъ뵪�μ빟�명빐R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arita-buriB';
+    src: url('https://cdn.banggooso.com/assets/images/game35/Arita-buriB.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euljiro';
+    src: url('https://cdn.banggooso.com/assets/fonts/BMEULJIROTTF.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/BMEULJIROTTF.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Corporate-Logo-Rounded';
+    src: url('https://cdn.banggooso.com/assets/fonts/Corporate-Logo-Rounded.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSansCJKjp';
+    src: url('https://cdn.banggooso.com/assets/fonts/NotoSansCJKjp-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansCJKjp';
+    src: url('https://cdn.banggooso.com/assets/fonts/NotoSansCJKjp-Medium.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansCJKjp';
+    src: url('https://cdn.banggooso.com/assets/fonts/NotoSansCJKjp-Bold.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansCJKjpBlack';
+    src: url('https://cdn.banggooso.com/assets/fonts/NotoSansCJKjp-Black.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StationCoolHappyBody2016';
+    src: url('https://cdn.banggooso.com/assets/fonts/StationCoolHappyBody2016.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/StationCoolHappyBody2016.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ZhankuLiteraryStyle';
+    src: url('https://cdn.banggooso.com/assets/fonts/ZhankuLiteraryStyle.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/ZhankuLiteraryStyle.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Ptolemy-GreatPrimer18';
+    src: url('https://cdn.banggooso.com/assets/fonts/Ptolemy-GreatPrimer18.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OdinRoundedBold';
+    src: url('https://cdn.banggooso.com/assets/fonts/OdinRoundedBold.woff2') format('woff2'),
+    url('https://cdn.banggooso.com/assets/fonts/OdinRoundedBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard-bold';
+    src: url('https://cdn.banggooso.com/assets/fonts/PretendardVariable.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Pretendard-medium';
+    src: url('https://cdn.banggooso.com/assets/fonts/PretendardVariable.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Pretendard-light';
+    src: url('https://cdn.banggooso.com/assets/fonts/PretendardVariable.woff2') format('woff2');
+    font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'RixGulim', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #212529;
+    text-align: left;
+    background-color: #ffffff;
+    /*overflow:hidden;*/
+    /* transform: skew(-0.03deg); */
+}
+
+@media (max-width: 500px) {
+    html,
+    body {
+        font-size: 3.16667vw;
+    }
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    -webkit-touch-callout: none;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    -webkit-touch-callout: none !important;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    transform: skew(-0.03deg);
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+    transform: skew(-0.03deg);
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+html {
+    /* font-size: 4.16667vw; */
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    /* letter-spacing: -0.04px; */
+}
+
+button,
+li,
+ul,
+dt,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+div,
+a,
+p,
+span,
+b {
+    /* transform: skew(-0.03deg); */
+}
+
+.app.search li,
+.app.search ul,
+.app.search dt,
+.app.search dl,
+.app.search dd,
+.app.search h4,
+.app.search h5,
+.app.search div,
+.app.search a,
+.app.search span {
+    transform: skew(0);
+}
+
+.app.index .home-feed,
+.app.index .home-feed ul,
+.app.index .feed-list li,
+.app.index .feed-list a,
+.app.index .feed-list div {
+    transform: skew(0);
+}
+
+u {
+    text-decoration: underline;
+}
+
+b {
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+}
+
+::-webkit-scrollbar,
+.app-main.phoneta .game-wrap::-webkit-scrollbar,
+.btn_delete.btn.new_exit {
+    display: none;
+}
+
+.img-responsive {
+    width: 100%;
+    max-width: 100%;
+}
+
+.app .app-header .app-header-btn:not([disabled]):not(.disabled),
+.btn:not([disabled]):not(.disabled),
+.btn-random:not([disabled]):not(.disabled),
+.game-wrap .game-body .question-options .question-option:not([disabled]):not(.disabled),
+.game-wrap .game-header .game-previous:not([disabled]):not(.disabled),
+.common-form-group .form-control-wrap .btn-remove-text:not([disabled]):not(.disabled),
+.tag .remove:not([disabled]):not(.disabled),
+.my-test-result-list .test-item-wrap .test-item .test-action .btn-more:not([disabled]):not(.disabled),
+.my-info-wrap .my-info .btn-my-info-edit:not([disabled]):not(.disabled),
+.profile-image-edit .icon-select-picture:not([disabled]):not(.disabled),
+.game-wrap .game-footer .btn-next-page:not([disabled]):not(.disabled) {
+    cursor: pointer;
+}
+
+.pop_result .popup .btn img,
+#keyword2 .tag-box .tag-label,
+.app_main.answer_wrap .answer_list img,
+.app .pop .popup .btn_exit.btn img,
+.app .app-main.research .research_box img,
+.pop_induce .pop_1216 .img_btn img,
+.pop_induce .pop_1216 .popup_img_1216 img,
+.pop_induce .popup .btn img,
+.feed-list li .thumb,
+.feed-list li .thumb img,
+.feed-list li .thumb img,
+.home-feed .all-category .line-clear {
+    width: 100%;
+}
+
+.feed-list li .thumb,
+.profile-image-edit {
+    position: relative;
+}
+
+button,
+a,
+select {
+    color: inherit;
+}
+
+/* 怨듯넻�쇰줈 留롮씠 �ㅼ뼱媛��� 肄붾뱶�� */
+
+.w-100 {
+    width: 100%;
+}
+
+.margin-0 {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.display-flex {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.display-inlineblock {
+    display: inline-block;
+}
+
+.color-w {
+    color: #ffffff;
+}
+
+.color-b {
+    color: #222222 !important;
+}
+
+.skew-03 {
+    transform: skew(-0.03deg);
+}
+
+.f-jalnan {
+    font-family: 'Jalnan', sans-serif;
+}
+
+.f-rix {
+    font-family: 'RixGulim', sans-serif !important;
+}
+
+.f-w-bold {
+    font-weight: bold;
+}
+
+.f-w-700 {
+    font-weight: 700;
+}
+
+.f-w-normal {
+    font-weight: normal !important;
+}
+
+.op-065 {
+    opacity: 0.65;
+}
+
+hr {
+    border: 0;
+    background: #f2f2f2;
+}
+
+/* button  */
+
+.btn {
+    display: inline-block;
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: center;
+    user-select: none;
+    text-decoration: none;
+    outline: 0;
+    vertical-align: middle;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    color: #222;
+    background-color: #fff;
+    position: relative;
+    font-weight: 500;
+    font-size: 0.9375rem;
+}
+
+.btn.yellow {
+    background-color: #ffd524;
+    border-color: #ffd524;
+    color: #222;
+}
+
+.btn.yellow[disabled] {
+    background-color: #d2d5db;
+    border-color: #d2d5db;
+}
+
+.btn.block {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    margin: 0 auto;
+}
+
+.btn-gray-round {
+    width: 5.53125rem;
+    height: 1.40625rem;
+    line-height: 1.40625rem;
+    font-size: 0.75rem;
+    background-color: #cbcbcb;
+    border-radius: 5.53125rem;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.btn-white-round {
+    width: 11.84375rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 0.9375rem;
+    background-color: #fff;
+    border-radius: 5.15625rem;
+    text-align: center;
+    color: #000000;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.btn-random {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    text-decoration: none;
+    outline: 0;
+    vertical-align: middle;
+    text-indent: -9999px;
+    border: 0 none;
+    background: transparent;
+    width: 1.125rem;
+    height: 0.90625rem;
+    background-color: transparent;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-random.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 1.125rem 0.90625rem;
+}
+
+/* icon */
+
+.icon-reply,
+.icon-lock,
+.icon-help,
+.icon-bell,
+.icon-people,
+.lock-icon,
+.logo2,
+.icon-setting,
+.icon-user,
+.icon,
+.icon-kakao,
+.icon-facebook,
+.icon-naver,
+.icon-apple,
+.icon-heart,
+.icon-join,
+.icon-notice,
+.icon-ask,
+.icon-chevron-right {
+    display: block;
+    text-indent: -9999px;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-color: transparent;
+}
+
+.icon-kakao {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/sns-kakao.png');
+}
+
+.icon-facebook {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/sns-facebook.png');
+}
+
+.icon-naver {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/sns-naver.png');
+}
+
+.icon-apple {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/sns-apple.png');
+}
+
+.icon-people {
+    width: 1.175rem;
+    height: 1.37rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-people.png');
+    display: inline-block;
+}
+
+.lock-icon {
+    width: 3.15625rem;
+    height: 3.03125rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/lock-icon.png');
+}
+
+.lock-icon.active {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/lock-icon-active.png');
+}
+
+.icon-setting {
+    width: 1.5rem;
+    height: 1.36rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-setting.png');
+}
+
+.icon-user {
+    width: 1rem;
+    height: 1.21875rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-user.png');
+}
+
+.icon-bell {
+    width: 1.125rem;
+    height: 1.34375rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-bell.png');
+}
+
+.icon-envelope {
+    width: 1.5625rem;
+    height: 1.125rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-envelope.png');
+}
+
+.icon-help {
+    width: 1.15625rem;
+    height: 1.1875rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-help.png');
+}
+
+.icon-lock {
+    width: 1.0625rem;
+    height: 1.21875rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-lock.png');
+}
+
+.icon-reply {
+    width: 1rem;
+    height: 1rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/share.png');
+    background-size: 100%;
+}
+
+.icon-heart {
+    width: 1.2rem;
+    height: 1rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-heart.png');
+    cursor: pointer;
+}
+
+.icon-join {
+    width: 1rem;
+    height: 1rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/play_arrow.png');
+    background-size: 100%;
+}
+
+.icon-heart.active {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-heart-active.png');
+}
+
+/* .icon-search {
+  width: 1.15rem;
+  height: 1.15rem;
+  background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-search_2.png');
+  background-size: 100% 100%;
+} */
+
+.logo2 {
+    /* �꾩옱�� �ъ슜�섎뒗 怨� �녿뒗�� 濡쒓퀬�쇱꽌 �쇰떒 �④꺼�볦쓬 */
+    width: 4.3125rem;
+    height: 4.46875rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/common/logo2.png');
+    margin: 3rem auto;
+}
+
+.nav_bot {
+    display: none;
+}
+
+/* �좊뱶�쇱뒪 footer */
+.ads-app-main-footer {
+    padding-bottom: 50px;
+}
+
+.ads-banner {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.ads-banner-wrap {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+/*  */
+
+.app {
+    width: 500px;
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    /* letter-spacing: -1px; */
+    /* font-size: 1.05rem; */
+    line-height: 1.2rem;
+    transform: skew(0);
+}
+
+.app .app-header {
+    height: 3.15rem;
+    position: relative;
+    background-color: #fff;
+    flex-shrink: 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.app .app-header.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.75rem;
+    position: relative;
+    background-color: #fff;
+    flex-shrink: 0;
+    padding: 0 1.25rem;
+    border: none;
+}
+
+.app .app-header .app-title {
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'RixGulimEB', sans-serif;
+}
+
+.app .app-header.index .app-logo {
+    background-position: 12px center;
+}
+
+.app .app-header .app-logo {
+    display: block;
+    background-color: transparent;
+    background-image: url('https://cdn.banggooso.com/assets/images/common/logo.png');
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    text-indent: -9999px;
+    height: 100%;
+    background-position: center center;
+    width: 15rem;
+    margin: -1px auto;
+}
+
+.app .app-header.index .app-logo + a {
+    right: 2.14rem;
+}
+
+.app .app-header .app-header-btn.back {
+    height: 100%;
+    background: transparent url('https://cdn.banggooso.com/assets/images/icons/back-arrow-b.png') no-repeat center center /
+    auto 1.2rem;
+}
+
+.app .app-header .app-header-btn.back-w {
+    height: 100%;
+    background: transparent url('https://cdn.banggooso.com/assets/images/game45/BACK-WHITE.png') no-repeat center center /
+    auto 1rem;
+}
+
+.app .app-header.index > a:nth-child(3) {
+    right: 12px;
+}
+
+.app .app-header .app-header-search-btn #search {
+    width: 2rem;
+    height: 2rem;
+    background-image: url(https://cdn.banggooso.com/assets/images/icons/icon-search_2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.app .app-header .app-header-search-btn {
+    padding: 0.625rem;
+}
+
+.app .app-header .app-header-btn {
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0 none;
+    background-color: transparent;
+    font-size: 0;
+    z-index: 1;
+    width: 3.83rem;
+}
+
+.app-header .app-header-btn:nth-child(2) {
+    right: 2.5rem;
+}
+
+.app-header button.app-header-btn:nth-child(3) {
+    right: 12px;
+}
+
+.app .app-header .app-header-btn.sett {
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* .app .app-header .app-header-btn .app-header-icon {
+  font-size: 1.2rem;
+  line-height: 2.99rem;
+} */
+
+.app .game-title {
+    background: #ffd524;
+    font-family: Jalnan;
+    text-align: center;
+    font-size: 1.23rem;
+    line-height: 3.17rem;
+    position: relative;
+    z-index: 10;
+}
+
+.app .app-main {
+    flex-grow: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+/* tag */
+
+.tag {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.7rem 0.5rem;
+    height: 1rem;
+    border-radius: 0.6875rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.tag .remove {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    text-decoration: none;
+    outline: 0;
+    vertical-align: middle;
+    width: 0.875rem;
+    height: 0.875rem;
+    background-color: transparent;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-label-remove.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -0.125rem;
+    right: 0;
+    text-indent: -9999px;
+    border: 0 none;
+    padding: 0;
+}
+
+/* sns */
+
+.share-sns-list {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.share-sns-list .list-title {
+    color: #222222;
+    margin-bottom: 1rem;
+    display: block;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.share-sns-list .list-title span {
+    display: inline-block;
+}
+
+.share-sns-list .list li {
+    display: inline-block;
+}
+
+.share-sns-list .list li + li {
+    margin-left: 0.35rem;
+}
+
+.share-sns-list .btn-share {
+    display: inline-block;
+    background-position: center center;
+    width: 2.5625rem;
+    height: 2.5625rem;
+    text-indent: -99999px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.share-sns-list .btn-share.kakao {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/btn-share-kakao.png');
+}
+
+.share-sns-list .btn-share.instagram {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/btn-share-insta.png');
+}
+
+.share-sns-list .btn-share.facebook {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/btn-share-facebook.png');
+}
+
+.share-sns-list .btn-share.twitter {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/btn-share-twitter.png');
+}
+
+.share-sns-list .btn-share.x {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/btn-share-x.png');
+}
+
+.share-sns-list .btn-share.link-copy {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/btn-share-linkcopy.png');
+}
+
+.share-sns-list .list-title h3 {
+    display: inline-block;
+}
+
+.share-sns-list .list-title .countBox {
+    display: inline-block;
+    margin-left: 0.6rem;
+}
+
+.share-sns-list .list-title .countBox .countImg {
+    display: inline-block;
+    width: 1rem;
+}
+
+.share-sns-list .list-title .countBox .countNumber {
+    display: inline-block;
+    font-family: 'RixGulim', sans-serif;
+}
+
+.app .pop .popup .btn_exit.btn img,
+.share-sns-list .list-title .countBox .countImg img {
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: url('https://cdn.banggooso.com/assets/images/common/bg_footer.png') no-repeat;
+    background-size: cover;
+    padding: 2.5rem 0 0.6rem;
+    font-weight: 300;
+    margin-top: 1.2rem;
+}
+
+footer p {
+    color: #fff;
+    line-height: 1.7;
+    letter-spacing: -0.5px;
+    font-size: 0.7rem;
+}
+
+footer p span {
+    font-weight: 700;
+}
+
+/* popup */
+
+.pop_induce,
+.pop_member {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+}
+
+.pop_induce::before,
+.pop_member {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.pop_induce.reword .popup,
+.pop_induce .popup {
+    position: absolute;
+    background: url('https://cdn.banggooso.com/assets/images/common/pop_induce.png');
+    background-size: 100% 100%;
+    left: 50%;
+    top: 50%;
+    width: 70%;
+    max-width: 400px;
+    padding-bottom: 27.5rem;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+}
+
+.pop_induce .popup .btn {
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    z-index: 100;
+}
+
+.pop_induce .popup .btn_exit {
+    right: 4.2%;
+    top: 20px;
+    width: 6.5%;
+}
+
+.pop_induce .popup.member .btn_induce.btn,
+.pop_induce .popup.logout .btn_induce.btn {
+    bottom: 4.7rem;
+    width: 100%;
+}
+
+.pop_induce .popup .btn_induce a {
+    width: 50%;
+}
+
+.pop_induce .popup .btn_induce a.btn_induce {
+    padding: 0% 3.5% 0% 6%;
+}
+
+.pop_induce .popup .btn_induce a.btn_login {
+    padding: 0% 6% 0% 3.5%;
+}
+
+.pop_induce .popup .wrap {
+    bottom: 0.5rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.pop_induce .popup .wrap .btn_goRank {
+    display: inline-block;
+    color: #222222;
+    font-family: 'RixGulim', sans-serif;
+    font-size: 0.8rem;
+    padding-bottom: 0.06rem;
+    border-bottom: 1px solid #222;
+    font-weight: 500;
+}
+
+.pop_induce .popup .checkbox {
+    bottom: -1.5rem;
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    display: inline-block;
+    color: #fff;
+    font-family: 'RixGulim', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding-bottom: 0.06rem;
+}
+
+.pop_induce .popup .checkbox input[type='checkbox'] {
+    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    color: #fff;
+}
+
+.pop_induce .popup .checkbox input[type='checkbox'] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color: #fff;
+}
+
+.pop_induce .popup .checkbox input[type='checkbox'] + label:before {
+    content: ' ';
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    line-height: 11px;
+    /* �몃줈�뺣젹�� �꾪빐 �믪씠媛믨낵 �쇱튂 */
+    margin: -2px 8px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.pop_induce .popup .checkbox input[type='checkbox']:checked + label:before {
+    content: 'v';
+    z-index: 1;
+}
+
+
+
+#app-down {
+    position: fixed;
+    bottom: 0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffd524;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-family: 'Jalnan', sans-serif;
+    font-size: 0.7rem;
+    z-index: 9999;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#app-down img {
+    height: 0.75rem;
+    margin-left: 12px;
+    margin-top: -2px;
+}
+
+/* intro.html & list-TypeP.html & test4-result.html & myroom_myranking.html */
+
+.rankingBox {
+    position: relative;
+    padding: 0 1rem;
+    line-height: 1.4;
+    margin-top: 2rem;
+}
+
+.rankingBox .myRanking .btn_refresh,
+.rankingBox .topRanking .btn_refresh {
+    position: absolute;
+    top: 0.8rem;
+    right: 4%;
+    cursor: pointer;
+    width: 1rem;
+}
+
+.rankingBox .myRanking {
+    position: relative;
+    border: 0.1875rem solid #f2f2f2;
+    padding: 1.4rem 0 2rem;
+    text-align: center;
+    border-radius: 0.3125rem;
+    /*margin-top: 2rem 0 1rem;*/
+}
+
+.rankingBox .myRanking .allNum {
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.rankingBox .myRanking .allNum span {
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+}
+
+.rankingBox .myRanking .myNum {
+    font-size: 33px;
+}
+
+.rankingBox .myRanking .myNum span {
+    font-size: 33px;
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+}
+
+.rankingBox .topRanking {
+    position: relative;
+    border: 0.1875rem solid #f2f2f2;
+    padding: 1.09375rem 1.8rem;
+    text-align: center;
+    border-radius: 0.3125rem;
+    margin: 1rem 0rem 2rem;
+    min-height: 33.5rem;
+}
+
+.rankingBox .myRanking h3,
+.rankingBox .topRanking h3 {
+    position: relative;
+    font-family: 'Jalnan', sans-serif;
+    font-size: 1.15625rem;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+    display: inline-block;
+    line-height: 1.35135rem;
+}
+
+.rankingBox .myRanking h3::before,
+.rankingBox .topRanking h3::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0.03125rem;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #ffd524;
+}
+
+.rankingBox .topRanking ul {
+    display: inline-block;
+    width: 100%;
+}
+
+.rankingBox .topRanking ul.list_title {
+    font-weight: 900;
+    font-family: 'Jalnan', sans-serif;
+    font-size: 0.7rem;
+    margin: 2.2rem 0 1.2rem;
+}
+
+.rankingBox .topRanking ul.list_content {
+    margin: 0.6rem 0rem 0.6rem;
+    font-size: 1rem;
+}
+
+.rankingBox .topRanking ul li {
+    float: left;
+}
+
+.rankingBox .topRanking ul li.conNum {
+    font-family: 'Jalnan', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-shadow: 5px 6px 0px rgba(255, 213, 36, 1);
+    text-align: center;
+    line-height: 0.8;
+}
+
+.rankingBox .topRanking ul li.number {
+    opacity: 0;
+}
+
+.rankingBox .topRanking ul li.number,
+.rankingBox .topRanking ul li.conNum {
+    width: 13%;
+}
+
+.rankingBox .topRanking ul li.id,
+.rankingBox .topRanking ul li.conId {
+    width: 33%;
+}
+
+.rankingBox .topRanking ul li.conId {
+    text-align: left;
+}
+
+.rankingBox .topRanking ul li.class,
+.rankingBox .topRanking ul li.conClass {
+    width: 32%;
+}
+
+.rankingBox .topRanking ul li.time,
+.rankingBox .topRanking ul li.conTime {
+    width: 22%;
+}
+
+/*  */
+
+.nav_bot {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -384px;
+    width: 768px;
+    height: 2.99rem;
+    font-size: 0;
+    background-color: rgba(255, 255, 255, 1);
+    border-top: 1px solid #e8e8e8;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.nav_bot a {
+    width: 25%;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+
+.nav_bot a:first-child {
+    background: url('https://cdn.banggooso.com/assets/images/common/nav01_off.png') no-repeat 50% 8%;
+    background-size: 41.8%;
+}
+
+.nav_bot a:nth-child(2) {
+    background: url('https://cdn.banggooso.com/assets/images/common/nav02_off.png') no-repeat 50% 8%;
+    background-size: 41.8%;
+}
+
+.nav_bot a:nth-child(3) {
+    background: url('https://cdn.banggooso.com/assets/images/common/nav03_off.png') no-repeat 50% 8%;
+    background-size: 41.8%;
+}
+
+.nav_bot a:nth-child(4) {
+    background: url('https://cdn.banggooso.com/assets/images/common/nav04_off.png') no-repeat 50% 8%;
+    background-size: 41.8%;
+}
+
+.nav_bot a:first-child:hover,
+.nav_bot a:first-child:focus {
+    background: url('https://cdn.banggooso.com/assets/images/common/nav01_on.png') no-repeat 50% 8%;
+    background-size: 41.8%;
+}
+
+.nav_bot a:nth-child(2):hover,
+.nav_bot a:nth-child(2):focus {
+    background: url('https://cdn.banggooso.com/assets/images/common/nav02_on.png') no-repeat 50% 8%;
+    background-size: 41.8%;
+}
+
+.nav_bot a:nth-child(3):hover,
+.nav_bot a:nth-child(3):focus {
+    background: url('https://cdn.banggooso.com/assets/images/common/nav03_on.png') no-repeat 50% 8%;
+    background-size: 41.8%;
+}
+
+.nav_bot a:nth-child(4):hover,
+.nav_bot a:nth-child(4):focus {
+    background: url('https://cdn.banggooso.com/assets/images/common/nav04_on.png') no-repeat 50% 8%;
+    background-size: 41.8%;
+}
+
+.nav_bot a > p {
+    border: 0.1rem solid #ff151b;
+    width: 0.1rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 4.2%;
+    background: #ff151b;
+}
+
+.nav_bot .my-icon {
+    width: 2.09375rem;
+    height: 2.09375rem;
+    margin: 0 auto;
+    flex-shrink: 0;
+    border-radius: 100%;
+    display: block;
+    overflow: hidden;
+    margin-top: 6.5%;
+    border: 0.14rem solid #b3b3b3;
+}
+
+.nav_bot .my-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.nav_bot .my-icon:hover,
+.nav_bot .my-icon:focus {
+    border: 0.14rem solid #3fa9f5;
+}
+
+/* search.html */
+
+.app-main.search .common-form-group {
+    margin-top: 2.5rem;
+}
+
+.keyword-wrap {
+    flex-wrap: wrap;
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+.keyword-wrap .tag,
+.keyword-wrap .tag-box {
+    margin-right: 0.4375rem;
+    margin-bottom: 0.65625rem;
+}
+
+#keyword2 .tag-box {
+    width: 4.5rem;
+}
+
+/*  */
+
+.common-form-group .form-control-wrap,
+.common-form-group {
+    position: relative;
+}
+
+.common-form-group .form-control-wrap .form-control::-webkit-inner-spin-button,
+.common-form-group .form-control-wrap .form-control::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.common-form-group .form-control-wrap .form-control:focus,
+.common-form-group .form-control-wrap .form-control:active,
+.btn:focus,
+.game-wrap .game-header .game-previous:focus,
+.game-wrap .game-header .game-previous:active,
+.game-wrap .game-header {
+    outline: none;
+}
+
+.common-form-group + .sub-title {
+    margin: 1.25rem auto 2.5rem;
+    font-weight: 500;
+    font-family: 'RixGulim', sans-serif !important;
+}
+
+.common-form-group + .btn.yellow {
+    width: 19.21875rem;
+    height: 3.75rem;
+    border-radius: 1.875rem;
+    margin: 5.78125rem auto 0;
+}
+
+.common-form-group .form-control-wrap .form-control {
+    display: block;
+    width: 100%;
+    height: 3.2rem;
+    line-height: 2.5rem;
+    padding: 0 1.5rem;
+    background: #f2f2f2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 0 none;
+    border-radius: 0.4rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.common-form-group .form-control-wrap .btn-remove-text {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    text-decoration: none;
+    outline: 0;
+    vertical-align: middle;
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 1.3125rem;
+    height: 1.3125rem;
+    background-color: transparent;
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-remove-text.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100% 100%;
+    text-indent: -9999px;
+    border: 0 none;
+    padding: 0;
+}
+
+.app-main .common-form-group {
+    padding-left: 1.5625rem !important;
+    padding-right: 1.5625rem !important;
+    margin-top: 1.5rem;
+}
+
+/* search.html */
+
+.feed-list li + li:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.375rem;
+    background: #f6f6f6;
+}
+
+.feed-list li .item-header {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1.5rem 0.9rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-family: 'Pretendard-bold', sans-serif;
+}
+
+.feed-list li .item-header .item-icon {
+    /* color: #222222; */
+    position: relative;
+    width: 1.375rem;
+    /* border-radius: 1.09375rem; */
+}
+
+.feed-list li .item-body {
+    height: 6.5rem;
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem 0.5rem 1.5rem;
+    gap: 0.375rem;
+}
+
+.feed-list li .item-body .title_wrap {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.feed-list li .item-body .s_title_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.feed-list li .item-body .title_wrap h4.title {
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 0;
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    font-family: 'Pretendard-bold', sans-serif;
+    letter-spacing: -0.013rem;
+}
+
+.feed-list li .item-body .s_title_wrap .s_title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #A0A0A0;
+    font-family: 'Pretendard-light', sans-serif;
+    letter-spacing: -0.013rem;
+}
+
+.feed-list li .item-body .item-actions {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.feed-list li .item-body .item-actions:nth-child(1) {
+    background-color: #000;
+}
+
+.feed-list li .item-body .item-actions dl {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.feed-list li .item-body .item-actions dl:first-of-type {
+    padding-right: 0.5rem;
+    border-right: 1px solid #A0A0A0;
+}
+
+.feed-list li .item-body .item-actions dl + dl {
+    padding-left: 0.5rem;
+}
+
+.feed-list li .item-body .item-actions dl dt {
+    margin-right: 0.3rem;
+}
+
+.feed-list li .item-body .item-actions dl dd {
+    color: #222222;
+    font-weight: 500;
+    width: max-content;
+    font-family: 'Pretendard-medium', sans-serif;
+    font-size: 1.063rem;
+    color: #545454;
+    line-height: 1.375rem;
+}
+
+/* loading.html & popup  */
+
+.pop_induce.loading {
+    width: 100%;
+    height: 100%;
+}
+
+.pop_induce .popup.popup_new {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 0);
+    background: #ffffff;
+    padding-bottom: 0;
+    overflow: auto;
+    height: 100vh;
+}
+
+.pop_induce .pop_1216 p {
+    font-size: 14px;
+}
+
+.pop_induce .pop_1216 p.btn_retest_1216 {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 180%;
+    font-size: 1rem;
+}
+
+.pop_induce .pop_1216 .popup_p {
+    font-size: 1.7em;
+    line-height: 130%;
+    text-align: center;
+    margin: 2.48rem 0 0;
+    font-weight: bold;
+}
+
+.pop_induce .pop_1216 .popup_img_1216 {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pop_induce .pop_1216 .img_btn {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pop_induce .pop_1216 .img_btn .btn {
+    bottom: 3%;
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    z-index: 100;
+}
+
+.pop_induce .pop_1216 .img_btn .btn_retest_1216 {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 130%;
+}
+
+.pop_induce .pop_1216 .btn_induce {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.pop_induce .pop_1216 #bannerWrap {
+    background: url('https://cdn.banggooso.com/assets/images/common/back_ad_tv_260.png') no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 25rem;
+    position: relative;
+    text-align: center;
+    padding-top: 11rem;
+}
+
+.pop_induce.loading .popup {
+    position: absolute;
+    background-size: 100%;
+    left: 50%;
+    top: 50%;
+    width: 568px;
+    transform: translate(-50%, -50%);
+}
+
+/***************************************************************************************/
+
+/* 寃뚯엫 怨듯넻 遺�遺� -  �뚯뒪�� */
+
+.rankingBox .myRanking .btn_refresh img,
+.rankingBox .topRanking .btn_refresh img,
+#keyword2 .tag-box .tag-label,
+.app_main.answer_wrap .answer_list img,
+.app .app-main.research .research_box img,
+.app .pop .popup .btn_exit.btn img,
+.pop_induce .popup .btn img,
+.pw_find_next,
+.pw_find_next > div,
+.pw_find_next > div button,
+.pop_induce .pop_1216 .img_btn img,
+.pop_induce .pop_1216 .popup_img_1216 img,
+.game-wrap .clock img,
+.feed-list li .thumb,
+.feed-list li .thumb img,
+.feed-list li .thumb img,
+.home-feed .all-category .line-clear {
+    width: 100%;
+}
+
+.game-wrap .game-footer .btn-next-page:disabled,
+.game-wrap .game-footer .btn-next-page.disabled,
+.my-info-wrap .my-info .btn-my-info-edit:disabled,
+.my-info-wrap .my-info .btn-my-info-edit.disabled,
+.my-test-result-list .test-item-wrap .test-item .test-action .btn-more:disabled,
+.my-test-result-list .test-item-wrap .test-item .test-action .btn-more.disabled,
+.profile-image-edit .icon-select-picture:disabled,
+.profile-image-edit .icon-select-picture.disabled,
+.game-wrap .game-header .game-previous:disabled,
+.game-wrap .game-header .game-previous.disabled,
+.common-form-group .form-control-wrap .btn-remove-text:disabled,
+.common-form-group .form-control-wrap .btn-remove-text.disabled,
+.tag .remove:disabled,
+.tag .remove.disabled,
+.btn-random:disabled,
+.btn-random.disabled,
+.btn:disabled,
+.btn.disabled,
+.app .app-header .app-header-btn:disabled,
+.app .app-header .app-header-btn.disabled {
+    opacity: 0.65;
+}
+
+.feed-list li a {
+    text-align: center;
+    /* padding-bottom: 2.65625rem; */
+    width: 100%;
+}
+
+.feed-list li .thumb {
+    position: relative;
+}
+
+/* �대챸�� �뚯궗 - idx 38 */
+
+.app.company .game-title {
+    color: #ffffff;
+    background: #00a0de;
+}
+
+/* 硫랁뵆媛깆뼱 �뚯뒪�� - idx 29 */
+
+.app.doppelganger .game-title {
+    background-color: #ff6b6c;
+    color: #ffffff;
+}
+
+/* �섍린�� �뀁냽 �숇Ъ �뚯뒪�� - idx 34 */
+
+.huggies.app .game-title {
+    background: #4f8f56;
+    color: white;
+    font-family: 'lropkeBatangM', sans-serif;
+}
+
+/* �좏븳 �대쾶由� �대챸�� �섎Т �뚯뒪�� - idx 35 */
+
+.app.namu .app-header .app-logo.logoResult {
+    background-image: url('https://cdn.banggooso.com/assets/images/game35/logoResult.png');
+    width: 11rem;
+    background-size: 100%;
+}
+
+.app.namu .game-title {
+    background: #469d64;
+    font-family: 'lropkeBatangM', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.game-intro.namu .img-halt-box .list li > span.label-bottom,
+.app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-tags li,
+.app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-tags {
+    font-family: 'RixGulimEB', sans-serif;
+    font-weight: 500;
+}
+
+.namu.game-intro .game-count .count-label,
+.app-main.namu .test-lists-wrap .test-lists .test-list-item.rank_list .num,
+.app-main.namu .game-intro .img-halt-box .list li > span.label-top.first,
+.app-main.namu .game-intro .img-halt-box .list li > span.label-top.second,
+.app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-title p + span,
+.app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-title p,
+.app-main.namu .rank_list_wrap .title,
+.game-result.namu .img-halt-box .list li > span,
+.namu.game-result .title,
+.namu.game-result .result-box .result-box-title,
+.game-intro.namu .result-box .result-box-title,
+.game-intro.namu .game-intro-title,
+.game-intro.namu .game-intro-title,
+.namu.game-result .title > small {
+    /*font-family:'Arita-buriB';*/
+    font-family: 'lropkeBatangM' !important;
+    font-weight: bold !important;
+}
+
+.namu.game-result .recommend-list .title {
+    font-family: 'RixGulim', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+/* K諛μ떖 �뚯뒪�� - idx 33 */
+
+.app.rice .game-title {
+    background-color: #f4351c;
+    color: #ffffff;
+}
+
+/* �캼ti �뚯뒪�� - idx 36 */
+
+.app.pbti .game-title {
+    color: #ffffff;
+    background-color: #2cbea9;
+}
+
+/* 20200918 �쇳뵾�� 異붽� / 媛뺤븘吏��� �� - idx 5 */
+
+.app.dog .app-header {
+    text-align: center;
+    line-height: 25px;
+}
+
+.app.dog .app-header .app-title {
+    line-height: 25px;
+}
+
+/* 20201014 �고� 異붽� - idx 9 */
+
+.app.phonta .app-header {
+    text-align: center;
+}
+
+.game-header.phoneta {
+    font-size: 1.05rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/game6/iframe.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.app .game-title.phoneta {
+    background-image: url('https://cdn.banggooso.com/assets/images/game6/phoneta_title.png');
+    background-size: 100%;
+    font-size: 0px;
+}
+
+/* 20201019 移댁뭅�� 異붽� - idx 10 */
+
+.app.kakao .app-header {
+    text-align: center;
+}
+
+.app-main.kakao,
+.app-main.kakao .share-sns-list .list-title {
+    font-family: 'S-CoreDream-5Medium', sans-serif;
+}
+
+/* 20201021 吏곸옣�λ젰 異붽� - idx 11 */
+
+/*  20201021 �꾩깮�� 異붽� - idx 12 */
+
+.app.tang .game-title {
+    background-color: #f82b4c;
+    color: white;
+}
+
+/*  20201118 泥レ씤�� 異붽� - idx 13 */
+
+.app.first .game-title {
+    background-color: #ffd524;
+    color: #fff;
+}
+
+/* 20201124 �뺤떖�뚯뒪�� 異붽� - �댁떗�몃뱾 - idx 15 */
+
+.app.twenty .game-title {
+    background: #f8b616;
+    color: #fff;
+}
+
+/* 20201130 珥덈뒫�ν뀒�ㅽ듃 異붽� - idx 14 */
+
+.app.hero .game-title {
+    background: #d6171f;
+    color: #fff;
+}
+
+/* 20201201 �곗븷�λ젰�뚯뒪�� - idx 2 */
+
+.app.newyear .app-header {
+    text-align: center !important;
+}
+
+.app.newyear .game-title {
+    background: #fe3190;
+    color: #fff;
+}
+
+/* 遺��먯쑀�� �뚯뒪�� - idx 18 */
+
+.app.rich .game-title {
+    background-color: #f58220;
+    color: #ffffff;
+}
+
+.app.rich .title.rich {
+    margin-top: 1.5rem;
+}
+
+.app.rich .app-header .app-logo.mirae {
+    background-image: url('https://cdn.banggooso.com/assets/images/game18/logo.png');
+    width: 100%;
+    background-size: 57%;
+    background-position: center;
+}
+
+/* 20201214 cu 癒뱀옒�� �뚯뒪��  - idx 19 */
+
+.app.cu .game-title {
+    background: #863cc7;
+    color: #fff;
+}
+
+/* 2020 諛덊뀒�ㅽ듃 -  肄붾뱶 - idx 21 */
+
+.app.mim .game-title {
+    background-color: #ffd524;
+    color: white;
+}
+
+.app-mim .share-sns-list {
+    margin-top: 1.5rem;
+}
+
+/* �덉뜲誘� �뚯뒪�� - idx 4  */
+
+.app.nun .app-header {
+    text-align: center;
+}
+
+/* �곕━���� 20200111 -  肄붾뱶 �뉰TI - idx 23 */
+
+.app.money .game-title {
+    background: #007bc8;
+    color: white;
+    transform: skew(-0.03deg);
+}
+
+.app.money .result-box .img-halt-box .list li > span.label-top.first,
+.app.money .result-box .img-halt-box .list li > span.label-top.second {
+    text-indent: 0;
+    text-shadow: 0.05rem 0.05rem 0 #70c8ff;
+    background-image: none;
+    font-size: 1.1rem;
+}
+
+/*lg �섏슦�쒖뒪 - idx 22 */
+
+.app.lg_how {
+    font-size: 0.78125rem;
+}
+
+.app.lg_how .game-title {
+    font-family: 'RixGulim', sans-serif;
+    background: #900c06;
+    color: white;
+}
+
+/* �꾩씠�� - idx 3 */
+
+.app.idol .app-header {
+    text-align: center;
+}
+
+/* �섎씪���� ���� �닿� �좎씠�쇰㈃? - idx 25 */
+
+.app.god .game-title {
+    color: white;
+    background: #9e2369;
+}
+
+/* �꾩씠�ㅻ컮�댁삤 - 移섏빟 遺�罹� - idx 26 */
+
+.app.iobio .game-title {
+    background-color: #50cff5;
+    color: #ffffff;
+}
+
+/* �덊빐 吏ㅻ퐨湲� - idx 27*/
+
+.game-intro-sub,
+.game-intro-title.small,
+.game-intro-title.big,
+.list-title.special-sns,
+.list-title.participant,
+.game-count .count-num.imgselection,
+.upload-title,
+.upload-btn,
+.result-btn,
+.upload-age,
+.upload-age-text,
+.result-title,
+.result-article,
+.result-article figcaption {
+    font-family: 'Euljiro', sans-serif !important;
+}
+
+/* �쇱씪�� - �낅┰�대룞媛� - idx 28 */
+
+.app.sam1 .header-sam1 {
+    width: 100%;
+    height: 2.99rem;
+    background-image: url('https://cdn.banggooso.com/assets/images/game28/result-banner.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+    background-color: #ffffff;
+    font-family: 'ON-�ъ뵪�μ빟�명빐B', sans-serif;
+    text-align: center;
+    line-height: 2.99rem;
+}
+
+.header-sam1 > b {
+    font-weight: 590;
+    padding-left: 0.45rem;
+}
+
+.app.sam1 .app-header {
+    text-align: center;
+    background-color: black;
+    border-bottom: 1px solid transparent;
+}
+
+.app.sam1 .btn-share.kakao {
+    background-image: url('https://cdn.banggooso.com/assets/images/game28/icon/kakatalk.png');
+}
+
+.app.sam1 .btn-share.instagram {
+    background-image: url('https://cdn.banggooso.com/assets/images/game28/icon/instagram.png');
+}
+
+.app.sam1 .btn-share.facebook {
+    background-image: url('https://cdn.banggooso.com/assets/images/game28/icon/facebook.png');
+}
+
+.app.sam1 .btn-share.twitter {
+    background-image: url('https://cdn.banggooso.com/assets/images/game28/icon/twitter.png');
+}
+
+.app.sam1 .share-sns-list .btn-share.link-copy {
+    background-image: url('https://cdn.banggooso.com/assets/images/game28/icon/URL.png') !important;
+    margin-right: 0;
+}
+
+.app.sam1 .app-header {
+    background: black;
+}
+
+.app-header .app-header-btn.sam1,
+.app.sam1 .app-header button.app-header-btn {
+    color: white;
+}
+
+.app.sam1 .game-title {
+    display: none;
+}
+
+.app.sam1 {
+    background-color: black;
+    font-family: 'ON-�ъ뵪�μ빟�명빐R', sans-serif;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100% auto;
+    height: 100vh !important;
+    overflow: hidden;
+    transition: all 1.5s linear 0s;
+}
+
+.app.sam1 .app-main .share-sns-list .list-title {
+    color: white;
+}
+
+.app.sam1 img,
+.app.sam1 a {
+    -webkit-touch-callout: default !important;
+}
+
+/* 怨좎씤臾� �뚯뒪�� - idx 1 */
+
+.app.mim_going .game-title {
+    color: #ffffff;
+}
+
+/*  �앹뾽 */
+
+.pop_1216 .popup_p {
+    font-size: 1.7rem;
+    line-height: 130%;
+    text-align: center;
+    margin: 50px 0 0;
+    font-weight: 700;
+}
+
+.pop_1216 p.btn_retest_1216 {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 180%;
+}
+.pop_1216 .popup_img_1216 {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.pop_1216 .img_btn {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pop_1216 .img_btn .btn {
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    z-index: 100;
+    bottom: 3%;
+}
+
+.pop_1216 p.btn_retest_1216 {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 180%;
+}
+
+.pop_1216 .img_btn img,
+.pop_1216 .popup_img_1216 img {
+    width: 100%;
+}
+
+.pop_1216 #bannerWrap {
+    width: 100%;
+    height: 25rem;
+    position: relative;
+    background: url('https://cdn.banggooso.com/assets/images/common/back_ad_tv.png') no-repeat;
+    background-size: 100%;
+    text-align: center;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+}
+
+.pop_1216 #bannerWrap .adsbygoogle {
+    display: flex !important;
+    justify-content: center !important;
+    margin-left: auto !important;
+}
+
+/* @media screen and (min-width: 520px) {
+  html {
+    font-size: 20.4444444444444px !important;
+  }
+} */
+
+@media screen and (max-width: 500px) {
+    button,
+    li,
+    ul,
+    dt,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    div,
+    a,
+    p,
+    span,
+    b,
+    body {
+        transform: skew(0);
+    }
+
+    .pop_induce.loading .popup {
+        overflow: hidden;
+    }
+
+    .popup_new.popup .pop_1216 .popup_p {
+        font-size: 1.2rem;
+        margin: 1rem 0 0;
+    }
+
+    .popup_new.popup .pop_1216 .img_btn .btn {
+        bottom: 1px;
+        width: 150%;
+        left: -23%;
+    }
+
+    .popup_new.popup .pop_1216 #bannerWrap > a {
+        top: 28.5%;
+    }
+
+    .popup_new.popup .pop_1216 .popup_img_1216 {
+        width: 35%;
+    }
+
+    .popup_new.popup .pop_1216 p.btn_retest_1216 {
+        line-height: 100%;
+        margin-top: 0.75rem;
+        font-size: 1rem;
+        text-align: center;
+        letter-spacing: 0.2px;
+        line-height: 180%;
+    }
+
+    .app {
+        width: 100%;
+    }
+
+    .app.index .app-header .app-logo,
+    .app.index .app-header .app-logo {
+        margin: 0.5rem 0 0 12px;
+        display: block;
+        width: 5.85rem;
+        height: 1.95rem;
+        background-color: transparent;
+        background-image: url('https://cdn.banggooso.com/assets/images/common/logo.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 100% 100%;
+        font-size: 0;
+        text-indent: -9999px;
+    }
+
+    .feed-list li .item-body .item-actions {
+        font-size: 0.75rem;
+    }
+    /* .feed-list li .item-body {
+      height: 3.88rem;
+    } */
+    .pop_induce.member .popup .btn_induce {
+        bottom: 7.7rem;
+    }
+    .pop_induce.pop_answer .popup {
+        padding-bottom: 23px;
+    }
+    .app .app-header {
+        height: 2.99rem;
+    }
+    .pop_induce.rank .popup .btn_induce.btn {
+        bottom: 2rem !important;
+    }
+    .pop_induce .popup,
+    .pop_induce.pop_answer .popup {
+        padding-bottom: 22rem;
+    }
+    .pop_induce.pop_answer .popup .btn_induce {
+        bottom: 1rem;
+    }
+    .pop_induce .popup .checkbox input[type='checkbox'] + label:before {
+        width: 16px;
+        height: 16px;
+        line-height: 12px;
+        margin: -2px 4px 0 0;
+        color: #fff !important;
+    }
+    .app.money .game-title {
+        transform: skew(0);
+    }
+    body.ja-JP .app.index .app-header .app-logo,
+    body.zh-CN .app.index .app-header .app-logo,
+    body.en-US .app.index .app-header .app-logo,
+    body.ca-ES .app.index .app-header .app-logo {
+        background-image: url('https://cdn.banggooso.com/assets/images/common/logo-locale.png');
+        width: 6.7rem;
+        height: 1.7rem;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .pop_1216 #bannerWrap {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .pop_1216 #bannerWrap ins div,
+    .pop_1216 #bannerWrap ins a,
+    .pop_1216 #bannerWrap ins img {
+        width: 100% !important;
+        min-width: inherit !important;
+        min-height: inherit !important;
+        height: auto !important;
+    }
+
+    #bannerWrap,
+    .pop_1216 #bannerWrap ins,
+    .pop_1216 #bannerWrap ins iframe {
+        width: 100% !important;
+        min-width: inherit !important;
+        min-height: inherit !important;
+    }
+}
+@media screen and (max-width: 320px) {
+    .pop_induce .pop_1216 #bannerWrap > a > img {
+        width: 100%;
+    }
+}
+
+body.ja-JP .app .app-header .app-logo,
+body.zh-CN .app .app-header .app-logo,
+body.en-US .app .app-header .app-logo,
+body.ca-ES .app .app-header .app-logo {
+    background-image: url('https://cdn.banggooso.com/assets/images/common/logo-locale.png');
+}
+
+body.ja-JP .f-jalnan,
+body.ja-JP .app .game-title,
+body.ja-JP #app-down,
+body.ja-JP .rankingBox .myRanking h3,
+body.ja-JP .rankingBox .topRanking h3,
+body.ja-JP .rankingBox .topRanking ul.list_title,
+body.ja-JP .rankingBox .topRanking ul li.conNum {
+    font-family: 'Corporate-Logo-Rounded';
+}
+
+body.ja-JP,
+body.ja-JP .f-rix,
+body.ja-JP .share-sns-list .list-title .countBox .countNumber,
+body.ja-JP .pop_induce .popup .wrap .btn_goRank,
+body.ja-JP .pop_induce .popup .checkbox,
+body.ja-JP .common-form-group + .sub-title,
+body.ja-JP .feed-list li .item-body .title_wrap .s_title,
+body.ja-JP .namu.game-result .recommend-list .title,
+body.ja-JP .app.lg_how .game-title {
+    font-family: 'NotoSansCJKjp';
+}
+
+body.ja-JP b,
+body.ja-JP .app .app-header .app-title,
+body.ja-JP .rankingBox .myRanking .allNum span,
+body.ja-JP .rankingBox .myRanking .myNum span,
+body.ja-JP .feed-list li .item-header,
+body.ja-JP .feed-list li .item-body .title_wrap h4.title,
+body.ja-JP .feed-list li .item-body .item-actions dl dd,
+body.ja-JP .game-intro.namu .img-halt-box .list li > span.label-bottom,
+body.ja-JP .app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-tags li,
+body.ja-JP .app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-tags {
+    font-family: 'NotoSansCJKjpBlack';
+}
+
+body.en-US,
+body.en-US .f-rix,
+body.en-US .share-sns-list .list-title .countBox .countNumber,
+body.en-US .pop_induce .popup .wrap .btn_goRank,
+body.en-US .pop_induce .popup .checkbox,
+body.en-US .common-form-group + .sub-title,
+body.en-US .feed-list li .item-body .title_wrap .s_title,
+body.en-US .namu.game-result .recommend-list .title,
+body.en-US .app.lg_how .game-title {
+    font-family: 'OdinRoundedBold';
+}
+
+body.en-US b,
+body.en-US .app .app-header .app-title,
+body.en-US .rankingBox .myRanking .allNum span,
+body.en-US .rankingBox .myRanking .myNum span,
+body.en-US .feed-list li .item-header,
+body.en-US .feed-list li .item-body .title_wrap h4.title,
+body.en-US .feed-list li .item-body .item-actions dl dd,
+body.en-US .game-intro.namu .img-halt-box .list li > span.label-bottom,
+body.en-US .app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-tags li,
+body.en-US .app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-tags {
+    font-weight: 500;
+}
+
+body.zh-CN .f-jalnan,
+body.zh-CN .app .game-title,
+body.zh-CN #app-down,
+body.zh-CN .rankingBox .myRanking h3,
+body.zh-CN .rankingBox .topRanking h3,
+body.zh-CN .rankingBox .topRanking ul.list_title,
+body.zh-CN .rankingBox .topRanking ul li.conNum {
+    font-family: 'StationCoolHappyBody2016';
+}
+
+body.zh-CN,
+body.zh-CN .f-rix,
+body.zh-CN .share-sns-list .list-title .countBox .countNumber,
+body.zh-CN .pop_induce .popup .wrap .btn_goRank,
+body.zh-CN .pop_induce .popup .checkbox,
+body.zh-CN .common-form-group + .sub-title,
+body.zh-CN .feed-list li .item-body .title_wrap .s_title,
+body.zh-CN .namu.game-result .recommend-list .title,
+body.zh-CN .app.lg_how .game-title {
+    font-family: 'ZhankuLiteraryStyle';
+}
+
+body.zh-CN b,
+body.zh-CN .app .app-header .app-title,
+body.zh-CN .rankingBox .myRanking .allNum span,
+body.zh-CN .rankingBox .myRanking .myNum span,
+body.zh-CN .feed-list li .item-header,
+body.zh-CN .feed-list li .item-body .title_wrap h4.title,
+body.zh-CN .feed-list li .item-body .item-actions dl dd,
+body.zh-CN .game-intro.namu .img-halt-box .list li > span.label-bottom,
+body.zh-CN .app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-tags li,
+body.zh-CN .app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-tags {
+    font-family: 'ZhankuLiteraryStyle';
+    font-weight: 900;
+}
+
+body.ca-ES .f-jalnan,
+body.ca-ES .app .game-title,
+body.ca-ES #app-down,
+body.ca-ES .rankingBox .myRanking h3,
+body.ca-ES .rankingBox .topRanking h3,
+body.ca-ES .rankingBox .topRanking ul.list_title,
+body.ca-ES .rankingBox .topRanking ul li.conNum {
+    font-family: 'Ptolemy-GreatPrimer18';
+}
+
+body.ca-ES,
+body.ca-ES .f-rix,
+body.ca-ES .share-sns-list .list-title .countBox .countNumber,
+body.ca-ES .pop_induce .popup .wrap .btn_goRank,
+body.ca-ES .pop_induce .popup .checkbox,
+body.ca-ES .common-form-group + .sub-title,
+body.ca-ES .feed-list li .item-body .title_wrap .s_title,
+body.ca-ES .namu.game-result .recommend-list .title,
+body.ca-ES .app.lg_how .game-title {
+    font-family: sans-serif;
+}
+
+body.ca-ES b,
+body.ca-ES .app .app-header .app-title,
+body.ca-ES .rankingBox .myRanking .allNum span,
+body.ca-ES .rankingBox .myRanking .myNum span,
+body.ca-ES .feed-list li .item-header,
+body.ca-ES .feed-list li .item-body .title_wrap h4.title,
+body.ca-ES .feed-list li .item-body .item-actions dl dd,
+body.ca-ES .game-intro.namu .img-halt-box .list li > span.label-bottom,
+body.ca-ES .app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-tags li,
+body.ca-ES .app-main.namu .test-lists-wrap .test-lists .test-list-item .item-wrap .item-info .item-tags {
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+body.zh-CN .btn,
+body.zh-CN .btn-gray-round,
+body.zh-CN .btn-white-round,
+body.zh-CN .tag,
+body.zh-CN .share-sns-list .list-title,
+body.zh-CN .pop_induce .popup .wrap .btn_goRank,
+body.zh-CN .pop_induce .popup .checkbox,
+body.zh-CN .common-form-group + .sub-title,
+body.zh-CN .namu.game-result .recommend-list .title {
+    font-weight: 600;
+}
+
+body.ca-ES .btn,
+body.ca-ES .btn-gray-round,
+body.ca-ES .btn-white-round,
+body.ca-ES .tag,
+body.ca-ES .share-sns-list .list-title,
+body.ca-ES .pop_induce .popup .wrap .btn_goRank,
+body.ca-ES .pop_induce .popup .checkbox,
+body.ca-ES .common-form-group + .sub-title,
+body.ca-ES .namu.game-result .recommend-list .title {
+    font-weight: 600;
+}
+
+/* -------------nav-bar------------- */
+.nav-bar-wrapper{
+    z-index: 9999;
+    position: fixed;
+    height: 3.3265rem;
+    background-color: #fff;
+    bottom: 0;
+    width:500px;
+    /* width:100%; */
+    border-top: 0.5px solid #EAEAEA;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.nav-bar-wrapper .nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3.3265rem;
+}
+
+.nav-bar-wrapper .nav-bar > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.1671rem;
+}
+
+.nav-bar-wrapper .nav-bar .menu-list .menu-icon{
+    text-align: center;
+    background-position: center;
+    width: 2.339181286549708rem;
+    height: 1.5653rem;
+    background-repeat: no-repeat;
+    background-size: 1.565rem;
+    margin: 0 auto;
+}
+
+.nav-bar-wrapper .nav-bar .menu-list .menu-name{
+    font-family: RixGulim B;
+    font-size: 0.63587rem;
+    font-weight: 400;
+    line-height: 0.6849315068493151rem;
+    text-align: center;
+    color: #6D6D6D;
+}
+
+/* ------------- nav-bar------------- */
+.nav-bar-wrapper .nav-bar .menu-list#home .menu-name.active,
+.nav-bar-wrapper .nav-bar .menu-list#vote .menu-name.active,
+.nav-bar-wrapper .nav-bar .menu-list#school .menu-name.active,
+.nav-bar-wrapper .nav-bar .menu-list#my .menu-name.active,
+.nav-bar-wrapper .nav-bar .menu-list#emotion .menu-name.active{
+    color: #000;
+}
+
+.nav-bar-wrapper .nav-bar .menu-list#home .menu-icon{
+    background-image: url(https://cdn.banggooso.com/assets/images/nav-icons/home-off.png);
+}
+.nav-bar-wrapper .nav-bar .menu-list#vote .menu-icon{
+    background-image: url(https://cdn.banggooso.com/assets/images/nav-icons/vote-off.png);
+}
+.nav-bar-wrapper .nav-bar .menu-list#school .menu-icon{
+    background-image: url(https://cdn.banggooso.com/assets/images/nav-icons/school-off.png);
+}
+.nav-bar-wrapper .nav-bar .menu-list#my .menu-icon{
+    background-image: url(https://cdn.banggooso.com/assets/images/nav-icons/my-off.png);
+}
+.nav-bar-wrapper .nav-bar .menu-list#emotion .menu-icon{
+    background-image:  url(https://cdn.banggooso.com/assets/images/nav-icons/emotion-off.png);
+}
+
+.nav-bar-wrapper .nav-bar .menu-list#home .menu-icon.active{
+    background-image: url(https://cdn.banggooso.com/assets/images/nav-icons/home-on.png);
+}
+.nav-bar-wrapper .nav-bar .menu-list#vote .menu-icon.active{
+    background-image: url(https://cdn.banggooso.com/assets/images/nav-icons/vote-on.png);
+}
+.nav-bar-wrapper .nav-bar .menu-list#school .menu-icon.active{
+    background-image: url(https://cdn.banggooso.com/assets/images/nav-icons/school-on.png);
+}
+.nav-bar-wrapper .nav-bar .menu-list#my .menu-icon.active{
+    background-image: url(https://cdn.banggooso.com/assets/images/nav-icons/my-on.png);
+}
+.nav-bar-wrapper .nav-bar .menu-list#emotion .menu-icon.active{
+    background-image: url(https://cdn.banggooso.com/assets/images/nav-icons/emotion-on.png);
+}
+
+@media screen and (max-width: 500px){
+    .nav-bar-wrapper {
+        font-size: 12px;
+        width: 100%;
+        height: 4.6em;
+    }
+
+    .nav-bar-wrapper .nav-bar{
+        height: 4.6em;
+    }
+    .nav-bar-wrapper .nav-bar .menu-list .menu-icon{
+        background-size: 1.67rem;
+        height: 1.67rem;
+    }
+}
+
+
+/****************** 媛먯젙媛�寃� �앹뾽***********************/
+#emotion-open {
+    position: fixed;
+    bottom: 0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffd524;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 0.7rem;
+    z-index: 9999;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#emotion-open img {
+    height: 0.75rem;
+    margin-left: 12px;
+    margin-top: -2px;
+}
+
+#pop_emotion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+}
+
+#pop_emotion .app_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#pop_emotion .btn {
+    width: 90%;
+    padding: 1.2rem;
+    border-radius: 10px;
+    background: #8379EC;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    font-size: 1.26rem;
+    box-shadow: 0.1rem 0.1rem 0 #222;
+    margin-top: -0.5rem;
+    color: #FFFFFF;
+}
+
+#pop_emotion .plus {
+    color: #ffffff;
+    text-decoration: underline;
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#pop_emotion .btn>a {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#pop_emotion .btn.emotion>a>img {
+    width: 2.25rem;
+}

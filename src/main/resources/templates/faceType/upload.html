@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 업로드</title>
+    <link href="/css/base/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="app" data-app style="height: 788px">
+    <header class="app-header home">
+        <input type="checkbox" id="menuicon">
+        <label for="menuicon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="sidebar"></div>
+        <a href="/main" class="logo">
+            <img src="/img/mainlogo2.png" alt="Main Logo" width="40px" height="40px">
+        </a>
+        <a class="mypage">
+            <img src="/img/mypage.png" alt="My Page" width="40px" height="40px">
+        </a>
+    </header>
+    <div class="content" layout:fragment="content">
+        <h1>이미지를 업로드하세요</h1>
+        <form id="uploadForm">
+            <input type="file" id="image" name="image" accept="image/*" required>
+            <button type="submit">업로드 및 분류</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById('uploadForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData();
+        const fileInput = document.getElementById('image');
+        const file = fileInput.files[0];
+
+        formData.append('image', file);
+
+        fetch('/classify', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(data => {
+                sessionStorage.setItem('classificationResult', data);
+                window.location.href = '/faceType/result';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error: ' + error.message);
+            });
+    });
+</script>
+</body>
+</html>

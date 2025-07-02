@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{layout/base.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>mainPage</title>
+    <link rel="stylesheet" href="/css/main/main2.css">
+</head>
+<body>
+<div layout:fragment="content">
+  <div class="inter-text">
+    재미보따리에 온 걸 환영해!
+  </div>
+    <div class="rectangle-container">
+        <a href="/faceType/upload" class="large-rectangle">
+            동물상 테스트
+        </a>
+        <div class="small-rectangle-container">
+            <a href="/game" class="small-rectangle">
+                테스트
+            </a>
+        </div>
+        <a href="createGame/create" class="large-rectangle">테스트 만들기</a>
+    </div>
+</div>
+</body>
+</html>

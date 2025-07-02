@@ -1,0 +1,88 @@
+/* 전역 스타일 */
+
+header {
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    padding: 20px;
+    background-color: #fff; /* 흰색 배경 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+    width: 100%;
+    max-width: 600px; /* 최대 너비 설정 */
+}
+
+.logo img{
+    width: 60px;
+}
+header button {
+    background-color: #82aad5;
+    color: #fff;
+    border: none;
+    padding: 0px 9px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: auto;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif; /* 한국어 폰트 적용 */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* 배경색 */
+    color: #333; /* 기본 글자색 */
+    line-height: 1.6;
+    display: flex; /* 중앙 정렬을 위해 플렉스 박스 사용 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    min-height: 100vh; /* 화면 전체 높이 사용 */
+    flex-direction: column; /* 모든 요소를 세로로 나열 */
+}
+.title-container h1{
+    text-align: center;
+}
+.type-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.type-card img {
+    width: 100%;
+    height: auto;
+}
+
+.type-card h3 {
+    margin: 10px 0;
+}
+
+.type-card p {
+    color: #666;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.button-container .black_button {
+    display: inline-block; /* 인라인 블록으로 설정하여 여러 개의 버튼을 한 줄에 배치 */
+    margin: 10px;
+}
+
+.black_button a {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.black_button img{
+    width:28px;
+    filter: invert(1)
+}

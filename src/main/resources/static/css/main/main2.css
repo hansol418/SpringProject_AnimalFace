@@ -1,0 +1,78 @@
+.inter-text {
+    position: relative;
+    display: inline-block;
+    border-radius: 12px;
+    color: #0c0c0c;
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    font-family: 'Pretendard-bold';
+    font-weight: 700;
+    padding: 1.25rem 0 0 1.5rem;
+    letter-spacing: -0.013rem;
+    margin-bottom: 50px;
+}
+
+.rectangle-container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+.large-rectangle {
+    display: block;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #808080;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px; /* 상단 여백 추가 */
+    margin-bottom: 30px; /* 하단 여백 추가 */
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.large-rectangle:hover {
+    background-color: #c1c1c1;
+}
+
+.small-rectangle-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* 작은 사각형들 사이의 간격 설정 */
+}
+
+.small-rectangle {
+    display: block;
+    width: 45%; /* 각 사각형의 너비 설정 */
+    padding: 20px 0;
+    background-color: #808080;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.small-rectangle:hover {
+    background-color: #c1c1c1;
+}
+
+@media (max-width: 500px) {
+    .rectangle-container {
+        width: 100%;
+    }
+
+    .small-rectangle-container {
+        flex-direction: column; /* 작은 화면에서는 수직으로 배치 */
+        gap: 20px; /* 간격 조정 */
+    }
+
+    .small-rectangle {
+        width: 100%; /* 작은 화면에서는 너비를 100%로 설정 */
+    }
+}

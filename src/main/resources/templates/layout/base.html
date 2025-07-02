@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>재미보따리 공지사항</title>
+    <link href="/css/base/styles.css" rel="stylesheet">
+
+    <script>
+      // 로그아웃 성공 시 알림창 띄우기
+      window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('logout')) {
+          alert('성공적으로 로그아웃 되었습니다.');
+        }
+      }
+
+      // 로그아웃 버튼 클릭 시 처리
+      document.addEventListener('DOMContentLoaded', function() {
+        const logoutLink = document.querySelector('.logout a');
+        if (logoutLink) {
+          logoutLink.addEventListener('click', function(event) {
+            event.preventDefault(); // 기본 링크 클릭 동작 방지
+            fetch('/member/logout', {
+              method: 'POST',
+              credentials: 'include' // 쿠키를 포함하여 요청
+            }).then(response => {
+              if (response.ok) {
+                // localStorage에서 토큰 삭제
+                localStorage.removeItem("accessToken");
+                localStorage.removeItem("refreshToken");
+
+                // 로그인 페이지로 리다이렉트
+                window.location.href = "/member/login?logout=true";
+              }
+            }).catch(error => {
+              console.error("Logout failed:", error);
+            });
+          });
+        }
+      });
+
+    </script>
+
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header home">
+        <input type="checkbox" id="menuicon">
+        <label for="menuicon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar">
+          <div id="menu">
+            <div class="profile">
+              <div>
+                <a th:if="${isLoggedIn != null and !isLoggedIn}" class="login" href="/member/login">로그인이 필요합니다.</a>
+                <img src="/img/mainlogo.png" width="100px" height="100px" style="margin-top: 15px">
+              </div>
+            </div>
+            <ul class="list">
+
+              <li class="profile2" th:if="${isLoggedIn != null and isLoggedIn}">
+                <a href="/member/profile">나의 보따리</a>
+              </li>
+              <li class="notice">
+                <a href="/notice/list">
+                  공지사항
+                </a>
+              </li>
+              <li class="game">
+                <a href="createGame/create">
+                  게임 만들기
+                </a>
+              </li>
+              <li class="logout" th:if="${isLoggedIn != null and isLoggedIn}">
+                <a href="/member/logout">로그아웃</a>
+              </li>
+              <li class="login" th:if="${isLoggedIn != null and !isLoggedIn}">
+                <a href="/member/login">로그인</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="/main2" class="logo">
+          <img src="/img/mainlogo2.png" alt="Main Logo" width="40px" height="40px">
+        </a>
+        <a href="/search" class="mypage">
+          <img src="/img/search.png" alt="My Page" width="40px" height="40px">
+        </a>
+      </header>
+      <div layout:fragment="content"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,672 @@
+@charset "UTF-8";
+/* signup_normal.html & myroom_keyword_edit.html */
+
+.button-group .subtitle {
+    color: #222222;
+    font-size: 0.65625rem;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+}
+
+.button-group.display-flex .btn-random {
+    margin-left: auto;
+}
+
+.tag-box {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+}
+
+.tag-box input[type='radio'],
+.tag-box input[type='checkbox'] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.tag-box input[type='radio'] + .tag-label,
+.tag-box input[type='checkbox'] + .tag-label {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.4375rem;
+    height: 2.2rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+    background-color: #cccccc;
+    border-radius: 1.28125rem;
+}
+
+.tag-box input[type='radio']:checked + .tag-label.green,
+.tag-box input[type='checkbox']:checked + .tag-label.green {
+    background-color: #35964c;
+}
+
+.tag-box input[type='radio']:checked + .tag-label.lightblue,
+.tag-box input[type='checkbox']:checked + .tag-label.lightblue {
+    background-color: #7dc7ea;
+}
+
+.tag-box input[type='radio']:checked + .tag-label.orange,
+.tag-box input[type='checkbox']:checked + .tag-label.orange {
+    background-color: #ffaf21;
+}
+
+/* signup_login.html */
+
+.sign-in-other {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.sign-in-other li {
+    align-items: center;
+}
+
+.sign-in-other li a {
+    color: #222222;
+    font-weight: 500;
+    font-size: 0.6875rem;
+    padding-bottom: 0.007rem;
+    border-bottom: 1px solid #222;
+}
+
+.sign-in-other li + li:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 0.9375rem;
+    margin: 0 0.9375rem;
+    background: #222;
+}
+
+.sns-sign-up {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.sns-sign-up li {
+    margin: 0 0.5rem;
+    text-align: center;
+}
+
+.sns-sign-up li .sns-button {
+    display: inline-block;
+    text-indent: -9999px;
+    width: 20rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    margin: 0 auto;
+}
+
+.sns-sign-up li .sns-button.kakao {
+    background-image: url('../images/icons/sns-kakao.png');
+}
+
+.sign-up-wrap {
+    position: relative;
+    /*margin-top:4.5rem;*/
+}
+
+.sign-up-wrap > a.btn.yellow {
+    padding: 0.4rem 1.6rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+.sign-up-wrap .sns-text {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+    font-size: 0.88rem;
+    padding-bottom: 0.2rem;
+}
+
+.sign-in-actions + hr {
+    height: 3px;
+    width: 100%;
+    margin: 1rem 0 1.5rem;
+}
+
+.sign-in-actions > .display-flex {
+    align-items: flex-end;
+}
+
+.sign-in-actions button.btn {
+    height: 2.7rem;
+    border-radius: 0.8rem;
+    margin: 1rem auto 0.6rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.login-input {
+    font-size: 0.9rem;
+    color: #999999;
+    height: 2.4375rem;
+    border: 0 none;
+    border-bottom: 0.06rem solid #d1d1d1;
+    border-top: 0.1875rem solid transparent;
+    padding: 0 0.40625rem;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+}
+
+.login-input::-webkit-input-placeholder,
+.login-input:-ms-input-placeholder,
+.login-input::placeholder {
+    font-size: 0.6875rem;
+    color: #999999;
+}
+
+.login-input:focus {
+    outline: none;
+    border-bottom-color: #ffd524;
+}
+
+.checkbox-circle input[type='checkbox'] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.checkbox-circle input[type='checkbox'] + .checkbox-label {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    color: #222222;
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 1em;
+    cursor: pointer;
+    font-family: 'RixGulimEB', sans-serif;
+}
+
+.checkbox-circle input[type='checkbox'] + .checkbox-label:before {
+    content: '';
+    font-weight: 700;
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.13rem solid #222;
+    margin-right: 0.5625rem;
+    border-radius: 100%;
+    padding-top: 0.1rem;
+    line-height: 1em;
+}
+
+.checkbox-circle input[type='checkbox']:checked + .checkbox-label:before {
+    background: url('https://cdn.banggooso.com/assets/images/icons/check-box.png') no-repeat center center / 0.7rem;
+}
+
+#naverIdLogin {
+    border: 0;
+}
+
+#naverIdLogin img {
+    width: 100%;
+    height: auto !important;
+}
+
+/* pw_find.html & signup_normal.html */
+
+.pw_find_next,
+.pw_find_next > div,
+.pw_find_next > div button {
+    width: 100%;
+}
+
+.pw_find_next > div .btn.yellow {
+    line-height: 2.8rem;
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+}
+
+.app-main#step1 h2.common-title {
+    text-align: center;
+    margin: 1.875rem auto 1.71875rem;
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+}
+
+.app-main#step4 .common-form-group {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+}
+/* signup_normal.html */
+.app-main .next_btn {
+    text-align: right;
+}
+
+.app-main .next_btn .btn.yellow {
+    width: 7.03125rem;
+    height: 3.75rem;
+    border-radius: 3rem;
+    margin: 1rem 1rem 0 0;
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+}
+
+#keyword1 {
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+#keyword2 {
+    margin-bottom: 1.40625rem;
+}
+
+#keyword2 + button.btn.yellow {
+    width: 19.21875rem;
+    height: 3.75rem;
+    border-radius: 1.875rem;
+}
+
+.app-main #keyword2 + .next_btn .btn.yellow {
+    width: 100%;
+    height: 2.8125rem;
+}
+
+.radio-block {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+}
+
+.radio-block input[type='radio'],
+.radio-block input[type='checkbox'] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.radio-block input[type='radio'] + .radio-label,
+.radio-block input[type='checkbox'] + .radio-label {
+    color: #666666;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.radio-block input[type='radio'] + .radio-label:before,
+.radio-block input[type='checkbox'] + .radio-label:before {
+    content: '';
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    margin: 0 auto 0.5625rem;
+    border: 0.125rem solid #cccccc;
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+    border-radius: 100%;
+}
+
+.radio-block input[type='radio'] + .radio-label:after,
+.radio-block input[type='checkbox'] + .radio-label:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0.3125rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 100%;
+    border: 0.125rem solid #f2f2f2;
+    background-color: #ffffff;
+    transform: translate(-50%, 0);
+}
+
+.radio-block input[type='radio']:checked + .radio-label:after,
+.radio-block input[type='checkbox']:checked + .radio-label:after {
+    background-color: #ffd524;
+    border: 0.125rem solid #ffd524;
+}
+
+.radio.block {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+.radio input[type='checkbox'] + .radio-label {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    color: #181818;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.radio input[type='checkbox'] + .radio-label:before {
+    content: '';
+    display: block;
+    margin-right: 0.66667rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 100%;
+    background-color: transparent;
+    background-image: url('https://cdn.banggooso.com/assets/images/common/radio-unchecked.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+}
+
+.radio input[type='checkbox']:checked + .radio-label:before {
+    background-image: url('https://cdn.banggooso.com/assets/images/common/radio-checked.png');
+    box-shadow: 0px 0px 0.48rem 0.02rem rgba(205, 51, 90, 0.21);
+}
+
+.radio.type2 input[type='radio']:checked + .radio-label:before {
+    background-image: url('https://cdn.banggooso.com/assets/images/common/radio-checked-2.png');
+}
+/* signup_login.html */
+.app .app-main .form_w {
+    width: 75%;
+    margin: 0 auto;
+}
+/* 濡쒓렇�� �ㅼ젙 �섏씠吏� - signup_normal.html */
+.app.signup .app-main {
+    padding: 0 2.5rem;
+}
+
+.app.signup .login-input {
+    font-size: 0.7rem;
+}
+
+.app.signup .app-header {
+    border-bottom: 0;
+}
+
+.app.signup .app-main .form_w {
+    width: 100%;
+}
+
+.app.signup button,
+.app.signup input {
+    font-family: 'RixGulim', sans-serif;
+}
+
+.app.signup .app-main > h2 {
+    margin: 1rem 0 0.3rem;
+    font-size: 1.35rem;
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+}
+
+.app.signup a.btn.email-log {
+    width: 85%;
+    display: block;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    border: 1px solid #bebebe;
+    margin: 1.2rem auto 0.5rem;
+    border-radius: 0.85rem;
+    box-shadow: 1px 4px 10px #e2e2e2;
+    font-size: 0.85rem;
+}
+
+.form-group {
+    border-bottom: 1px solid #f6f6f6;
+    height: 3.4375rem;
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    align-self: stretch;
+}
+
+.form-group + .form-group {
+    border-top: 1px solid #f5f5f5;
+}
+
+.form-group .form-label {
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    width: 8.59375rem;
+    flex-shrink: 0;
+    padding-left: 1.8125rem;
+    color: #222222;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: 'RixGulim', sans-serif;
+}
+
+.form-group .controls {
+    flex-grow: 1;
+    min-width: 0;
+    position: relative;
+}
+
+.form-group .controls .form-input {
+    height: 100%;
+    border: 0 none;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 0.88rem;
+}
+
+.form-group .controls .form-input::-webkit-input-placeholder,
+.form-group .controls .form-input:-ms-input-placeholder,
+.form-group .controls .form-input::placeholder {
+    font-size: 0.625rem;
+    font-weight: 500;
+    color: #999999;
+}
+
+.form-group .controls .form-input:focus,
+.form-group .controls .form-input {
+    outline: none;
+}
+/*  */
+.my-test-result .btn.ask {
+    background-image: url('https://cdn.banggooso.com/assets/images/icons/icon-btn-ask.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100% 100%;
+    width: 8.4375rem;
+    height: 2.8125rem;
+    border-color: #e6e6e6;
+    border-radius: 1.40625rem;
+}
+
+.app-main > a.setting-row:nth-of-type(3) {
+    display: none;
+}
+
+.my-test-result .test-count {
+    color: #ec5c56;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    vertical-align: top;
+}
+/* member - signup.html */
+.center-block {
+    height: 100%;
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center-block > a {
+    border-color: #e6e6e6;
+    color: #222222;
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    margin: 0 auto;
+    width: 18.90625rem;
+    height: 3.75rem;
+    border-radius: 2rem;
+    margin-bottom: 0.7rem;
+}
+
+.center-block span {
+    margin: 1rem auto 0;
+    color: #a8a8a8;
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.center-block span a {
+    color: #a8a8a8;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#login-law {
+    margin: 1rem auto 0;
+    color: #a8a8a8;
+    font-size: 0.65rem;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: -1px;
+}
+
+#login-law a {
+    color: #a8a8a8;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.common-title {
+    color: #222222;
+    font-size: 1.1875rem;
+    font-weight: 500;
+    font-family: 'RixGulimEB', sans-serif;
+    line-height: 1.36053em;
+}
+/* member - singup_normal.html */
+.app-main#step1 hr {
+    height: 1.71875rem;
+    background: #f2f2f2;
+}
+
+.app-main#step4 h2.common-title,
+.app-main#step3 h2.common-title {
+    margin: 1.875rem auto;
+    text-align: center;
+}
+
+.app-main#step3 h2.common-title + .display-flex {
+    justify-content: center;
+}
+
+.app-main#step3 h2.common-title + .display-flex label:nth-child(2) {
+    margin: 0 3.28125rem;
+}
+
+.app-main#step5 > div {
+    padding: 1.5625rem;
+}
+
+.app-main#step5 h2.common-title + .button-group {
+    margin-top: 1rem;
+}
+
+.app-main#step5 .btn-random {
+    margin-left: auto;
+}
+
+.myProfile {
+    margin-top: 1.875rem;
+}
+
+.myProfile h2 {
+    font-size: 1.2rem;
+}
+
+.myProfile .my-icon {
+    width: 17.6%;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem;
+}
+
+.myProfile .my-icon img {
+    border-radius: 3rem;
+}
+
+.myProfile .my-icon + h2 {
+    margin-bottom: 1.5625rem;
+}
+
+.btn_wrap {
+    margin-top: 2.8125rem;
+}
+
+.btn_wrap .btn {
+    width: 37%;
+    height: 2.2rem;
+    border-radius: 1.32813rem;
+}
+
+.btn_wrap > a.btn.yellow {
+    width: 8.4375rem;
+    height: 2.65625rem;
+}
+
+.btn_wrap > a.btn.yellow:nth-child(2) {
+    margin-left: 1.25rem;
+}
+
+.btn .button-icon {
+    position: absolute;
+    left: 0.8125rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* 留덉씠�섏씠吏� �좉툑�ㅼ젙 媛�由ш린*/
+
+.app-main > a:nth-of-type(3) {
+    display: none;
+}
+
+.my-info > h4.my-name .btn-my-info-edit {
+    vertical-align: top;
+}

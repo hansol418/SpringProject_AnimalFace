@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로필</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      color: #333;
+      margin: 0;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .item p {
+      margin: 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .btn-edit {
+      background: transparent;
+      border: none;
+      color: #007bff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn-back {
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .btn-back:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-delete {
+      background-color: #dc3545;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .btn-delete:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>프로필</h1>
+  </div>
+
+  <div class="item">
+    <p>닉네임</p>
+    <p id="nickname" th:text="${memberName}">본인 닉네임</p>
+  </div>
+
+  <!-- 메인 화면으로 돌아가는 버튼 -->
+  <button class="btn-back" onclick="window.location.href='http://localhost:8080/main'">메인 화면으로 돌아가기</button>
+
+  <!-- 회원탈퇴 버튼 -->
+<!--  <form action="/member/delete" method="post" style="width: 100%;">-->
+<!--    <button type="submit" class="btn-delete">회원탈퇴</button>-->
+<!--  </form>-->
+</div>
+
+</body>
+</html>

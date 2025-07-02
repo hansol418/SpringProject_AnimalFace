@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>http://localhost:8080/apiLogin.html 직접 접근</h2>
+<button class="btn1">generateToken</button>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+
+    document.querySelector(".btn1").addEventListener("click",()=> {
+
+        // 샘플 데이터 베이스 각 디비에 있는 유저로 확인 하기
+        const data = {memberId:"asd1", memberPw:"1234"}
+
+        axios.post("http://localhost:8080/generateToken", data).then(res => {
+            const accessToken = res.data.accessToken
+            const refreshToken = res.data.refreshToken
+
+            // 웹 브라우저의 로컬 스토리지 저장.
+            // 확인, 크롬 -> 개발자도구 -> application -> local Storage 확인 가능.
+            localStorage.setItem("accessToken", accessToken)
+            localStorage.setItem("refreshToken", refreshToken)
+
+        })
+
+    }, false)
+</script>
+
+</body>
+</html>

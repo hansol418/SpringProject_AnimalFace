@@ -1,0 +1,108 @@
+@media screen and (max-width: 500px) {
+    .app {
+        width: 100%;
+    }
+}
+.app {
+    width: 500px;
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    /* letter-spacing: -1px; */
+    /* font-size: 1.05rem; */
+    line-height: 1.2rem;
+    transform: skew(0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'RixGulim', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #212529;
+    text-align: left;
+    background-color: #ffffff;
+    /*overflow:hidden;*/
+    /* transform: skew(-0.03deg); */
+}
+
+@media (max-width: 500px) {
+    html,
+    body {
+        font-size: 3.16667vw;
+    }
+}
+.app-header.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.75rem;
+    position: relative;
+    background-color: #fff;
+    flex-shrink: 0;
+    padding: 0 1.25rem;
+    border: none;
+}
+
+input[id="menuicon"]{
+    display: none;
+}
+input[id="menuicon"]+label{
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+input[id="menuicon"]+label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background: black;
+    transition: all .35s;
+}
+
+input[id="menuicon"]+label span:nth-child(1){
+    top:0;
+}
+input[id="menuicon"]+label span:nth-child(2){
+    top:50%;
+    transform: translateY(-50%);
+}
+input[id="menuicon"]+label span:nth-child(3){
+    bottom:0;
+}
+input[id="menuicon"]:checked +label span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked +label span:nth-child(2){
+    opacity: 0;
+}
+input[id="menuicon"]:checked +label span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+div[class="sidebar"]{
+    width: 200px;
+    height: 100%;
+    background-color: burlywood;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    z-index: 1;
+    transition: all .35s;
+}
+input[id="menuicon"]:checked +label+div{
+    left: 0;
+}

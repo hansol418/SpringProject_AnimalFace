@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{layout/base.html}">
+<head>
+  <title>Game List</title>
+  <link rel="stylesheet" href="/css/game.css">
+</head>
+<body>
+<div layout:fragment="content">
+  <ul>
+    <li th:each="game : ${games}">
+      <a th:href="@{/game/{gameNo}(gameNo=${game.gameNo})}" th:text="${game.gameName}"></a>
+    </li>
+  </ul>
+  <a href="/game/create">Create a new game</a>
+</div>
+</body>
+</html>

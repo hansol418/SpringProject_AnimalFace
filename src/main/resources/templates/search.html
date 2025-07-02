@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>검색 페이지</title>
+    <link href="/css/base/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="app">
+    <header class="app-header">
+        <a href="/main" class="logo">재미보따리</a>
+        <a href="/search" class="mypage">검색</a>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="검색어를 입력하세요" onkeyup="filterResults()">
+        <ul id="resultList">
+            <li><a href="/faceType/upload">동물상 테스트</a></li>
+            <li><a href="/game">테스트</a></li>
+            <li><a href="/createGame/create">테스트 만들기</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function filterResults() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const list = document.getElementById('resultList');
+        const items = list.getElementsByTagName('li');
+
+        for (let i = 0; i < items.length; i++) {
+            const item = items[i];
+            const link = item.getElementsByTagName('a')[0];
+            const text = link.textContent || link.innerText;
+
+            if (text.toLowerCase().indexOf(input) > -1) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        }
+    }
+</script>
+</body>
+</html>

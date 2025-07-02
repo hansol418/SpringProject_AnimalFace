@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{layout/base.html}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>재미보따리 게임 생성</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/css/create/create2.css">
+    <script>
+        function validateForm() {
+            // 입력 필드 가져오기
+            var name = document.getElementById("email-phone").value.trim();
+            var question = document.getElementById("question").value.trim();
+            var answer = document.getElementById("answer").value.trim();
+            var result = document.getElementById("result").value.trim();
+
+            // 필드 유효성 검사
+            if (name === "" || question === "" || answer === "" || result === "") {
+                alert("모든 필드를 채워주세요.");
+                return false;
+            }
+
+        }
+    </script>
+</head>
+
+<body class="ko-KR">
+<div layout:fragment="content">
+    <div class="app" data-app style="height: 788px">
+        <main class="app-main brand">
+            <h2>재미보따리는<br> <br> 여러분의 재미 있는 이야기를 듣고 싶어요!</h2>
+            <div class="ask">
+                <form id="brand" action="/createGame/create" method="post" onsubmit="return validateForm()">
+                    <div id="form-contents">
+                        <label for="email-phone" class="title">제목</label>
+                        <input type="text" name="createGameName" class="id" id="email-phone" placeholder="제목을 적어 주세요.">
+
+                        <br><br>
+
+                        <label for="question" class="title">질문</label>
+                        <textarea type="text" id="question" name="createQuestion" placeholder="질문을 차례대로 적어주세요."></textarea>
+
+                        <label for="answer" class="title">답변</label>
+                        <textarea id="answer" name="createAnswer" placeholder="질문에 대한 답변을 적어 주세요. 예)1번질문 답변 1)xx 2)xx"></textarea>
+
+                        <label for="result" class="title">결과</label>
+                        <textarea id="result" name="createResult" placeholder="결과를 작성 해 주세요."></textarea>
+
+                        <button type="submit" id="submitmail" class="btn btn-primary submitBtn">보내기</button>
+                        <button type="reset" id="cancel" class="btn btn-danger">초기화</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</div>
+
+</body>
+</html>

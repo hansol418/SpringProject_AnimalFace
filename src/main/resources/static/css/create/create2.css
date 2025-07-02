@@ -1,0 +1,133 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 500px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow-y: auto;
+
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.app-header-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.app-main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.30rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ask {
+    margin-top: 20px;
+}
+
+.title {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#form-contents {
+    margin-bottom: 20px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: border-color 0.2s;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: none;
+}
+
+#submitmail {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#submitmail:hover {
+    background-color: #0056b3;
+}
+
+#submitmail {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .app {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    input[type="text"], textarea {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+    }
+
+    #cancel {
+
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 1rem;
+        background-color: #ffbaba;
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    #cancel:hover {
+        background-color: #ffbaba;
+    }
+
+    #cancel {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+    }
+}

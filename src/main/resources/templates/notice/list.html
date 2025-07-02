@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{layout/base.html}">
+<head>
+      <link rel="stylesheet" href="/css/main/notice.css">
+</head>
+<body>
+<div layout:fragment="content">
+      <div class="row content">
+            <div class="card">
+                  <div class="card-body">
+                        <table class="table">
+                              <thead>
+                              <tr>
+                                    <th scope="col">번호.</th>
+                                    <th scope="col">제목.</th>
+                                    <th scope="col">날짜.</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <tr th:each="dto : ${noticesList}">
+                                    <th scope="row" th:text="${dto.noticeNo}"></th>
+                                    <td>
+                                          <a th:href="@{/notice/read(noticeNo=${dto.noticeNo})}">
+                                                [[${dto.noticeName}]]
+                                          </a>
+                                    </td>
+                                    <td th:text="${dto.getDate()}"></td>
+                              </tr>
+                              </tbody>
+                        </table>
+                  </div>
+            </div>
+      </div>
+</div>
+</body>
+</html>
